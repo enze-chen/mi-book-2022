@@ -1,0 +1,1227 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Module 1 &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/01/module.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="foo" href="intro_python_jupyter_blank.html" />
+    <link rel="prev" title="Intro to MI" href="informatics.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_01.html">
+   Day 01: Introductions
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Intro to Module 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_python_jupyter_blank.html">
+     Intro to Python 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python_greatest_hits_blank.html">
+       Python - Greatest hits 🚀
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python_gory_details_blank.html">
+       Python - Gory details 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../02/day_02.html">
+   Day 02: MI and data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/file_types_blank.html">
+     Working with files 🚀
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/tabular_data_blank.html">
+     Processing tabular data 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../02/databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02/materials_project_blank.html">
+       The Materials Project 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: MI research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/research_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/guest_mp.html">
+     Guest speaker: ???
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/data_viz_blank.html">
+     Intro to data visualization 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/best_practices_viz_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_viz_blank.html">
+       Advanced data viz 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../05/brief_intro_ml.html">
+     Brief intro to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../06/day_06.html">
+   Day 06: ML speedrun (pt. 1)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../06/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/intro_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../06/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_perf_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/homework_06.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../07/day_07.html">
+   Day 07: ML speedrun (pt. 2)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../07/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../07/features_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../07/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../07/advanced_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../07/homework_07.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/matminer_features_blank.html">
+     Matminer features 🚀
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../09/check_in.html">
+     Check-in meeting instructions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10/day_10.html">
+   Day 10: Research
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11/day_11.html">
+   Day 11: Juneteenth
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../12/day_12.html">
+   Day 12: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/welcome_back.html">
+     Welcome back!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/grad_school.html">
+     Grad school Q&amp;A: Mark!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/active_learning_blank.html">
+     Intro to active learning 🚀
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../13/day_13.html">
+   Day 13: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../13/presentations.html">
+     Giving presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../14/day_14.html">
+   Day 14: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../14/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../15/day_15.html">
+   Day 15: SLAM presentations!
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../15/final_presentations.html">
+     Final presentations
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_1.html">
+       Ana [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_2.html">
+       Anastasia [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_3.html">
+       Jesse [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_4.html">
+       Luis [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_5.html">
+       Sydney [Emoji TODO]
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../15/next.html">
+     What’s next?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../../_sources/chapters/01/module.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/chapters/01/module.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book-2022"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book-2022/issues/new?title=Issue%20on%20page%20%2Fchapters/01/module.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book-2022/edit/master/chapters/01/module.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        <a class="jupyterhub-button" href="https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/enze-chen/mi-book-2022&urlpath=tree/mi-book-2022/chapters/01/module.md&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure-and-expectations">
+   Structure and expectations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schedule-and-timing">
+     Schedule and timing ⌚
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessments">
+     Assessments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guest-speakers">
+     Guest speakers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources-and-technical-details">
+   Resources and technical details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zoom">
+     Zoom
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slack">
+     Slack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-book">
+     Jupyter Book
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#embedded-content">
+       Embedded content
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#datahub">
+       DataHub
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#github-issues">
+       GitHub issues
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#our-learning-community">
+   Our learning community 🌱
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-learning">
+     Active learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trying-new-things">
+     Trying new things
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#we-want-to-hear-from-you">
+     We want to hear from you! 💬
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Intro to Module 1</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure-and-expectations">
+   Structure and expectations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#schedule-and-timing">
+     Schedule and timing ⌚
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessments">
+     Assessments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guest-speakers">
+     Guest speakers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources-and-technical-details">
+   Resources and technical details
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zoom">
+     Zoom
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slack">
+     Slack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-book">
+     Jupyter Book
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#embedded-content">
+       Embedded content
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#datahub">
+       DataHub
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#github-issues">
+       GitHub issues
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#our-learning-community">
+   Our learning community 🌱
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-learning">
+     Active learning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trying-new-things">
+     Trying new things
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#we-want-to-hear-from-you">
+     We want to hear from you! 💬
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="intro-to-module-1">
+<span id="h1-01-module"></span><h1>Intro to Module 1<a class="headerlink" href="#intro-to-module-1" title="Permalink to this headline">¶</a></h1>
+<p>This segment is our “syllabus hour,” which we have explicitly typed out below to avoid any confusion.
+The three main sections are as follows:</p>
+<ol class="simple">
+<li><p><a class="reference internal" href="#h2-01-structure"><span class="std std-ref">Structure and expectations</span></a></p></li>
+<li><p><a class="reference internal" href="#h2-01-resources"><span class="std std-ref">Resources and technical details</span></a></p></li>
+<li><p><a class="reference internal" href="#h2-01-community"><span class="std std-ref">Our learning community 🌱</span></a></p></li>
+</ol>
+<div class="section" id="structure-and-expectations">
+<span id="h2-01-structure"></span><h2>Structure and expectations<a class="headerlink" href="#structure-and-expectations" title="Permalink to this headline">¶</a></h2>
+<p>First, we’ll start with a quick poll: <strong>Do you feel comfortable with being recorded on Zoom?</strong></p>
+<p>The reason we ask this is because there will be a few sessions where some of us won’t be able to make it, and we’d like to record those sessions so those folks can catch up on the information.
+But we also recognize some might feel uncomfortable about being recorded, so please let us know.
+The recordings will not be shared with anyone outside of this group and will not be used for any other purposes (e.g., posted to YouTube, used for research).</p>
+<div class="section" id="schedule-and-timing">
+<h3>Schedule and timing ⌚<a class="headerlink" href="#schedule-and-timing" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>For a more detailed breakdown of each day, click the corresponding <code class="docutils literal notranslate"><span class="pre">Day</span> <span class="pre">XX</span></code> in the navigation bar on the left.</p>
+</div>
+<p>A condensed summary of everything in this module can be found at <a class="reference internal" href="../../preamble/schedule.html"><span class="doc">Schedule (one page) 📅</span></a>.
+We plan to hold interactive tutorials during the first half with “lectures” and “homework,” for which we encourage you to work collaboratively and ask questions.
+In the remaining time, you will be doing self-directed research and we will hold office hours (OH) and other special events.</p>
+<p>In terms of timing, we’ll kick off each day at 9:00 AM PDT and have an afternoon debrief at a time that we’ll collectively decide right now.
+Note that we will <strong>not</strong> be following Berkeley Time in this module.
+In terms of actual working hours, particularly during the self-directed research segment, understand that we’re <em>very flexible</em> in accommodating your personal schedules and work preferences, so just keep us updated.
+There’s also <em>no requirement or expectation</em> to be working outside of “working hours,” which we’ll loosely say is 9-5 Mon-Fri.</p>
+</div>
+<div class="section" id="assessments">
+<h3>Assessments<a class="headerlink" href="#assessments" title="Permalink to this headline">¶</a></h3>
+<p>To help build understanding and collect feedback, there will be a sequence of assessments, which are a mix of reading, writing, coding, and making presentations.
+These are (or at least, should be) individually low stakes and implemented with the following considerations in mind:</p>
+<ul class="simple">
+<li><p>You will <strong>learn by doing</strong>, which is particularly important when it comes to data science and programming.</p></li>
+<li><p>Much of the coding, even in self-<em>directed</em> research, will be done in <strong>groups</strong>.
+Teamwork makes the dream work.</p></li>
+<li><p>The assessments <strong>build on each other</strong> so you can practice different ways of communicating science, culminating in a final presentation.</p></li>
+<li><p>Consider these assessments to be <strong>checkpoints</strong> to gauge your learning and to help keep things moving during these short three weeks.</p></li>
+<li><p>There are <strong>no grades</strong> (obviously). The more effort you’re able to put in, the more you will learn.
+Thus, we hope you are excited to challenge yourself to learn new things in this module!</p></li>
+</ul>
+</div>
+<div class="section" id="guest-speakers">
+<h3>Guest speakers<a class="headerlink" href="#guest-speakers" title="Permalink to this headline">¶</a></h3>
+<p>As mentioned in the kickoff meeting, one thing that we will try to incorporate into this module is inviting guest speakers to share their work and life story with us.
+These are great career development opportunities for you to learn about the impact of materials informatics and how graduate school (or not!) can prepare you for this field.
+We’ve tried to be very intentional about selecting speakers with diverse educational and professional journeys for you to learn about (see their respective pages for more information and times).
+<strong>We kindly ask you to attend these talks and ask the speaker questions.</strong>
+They’re all very enthusiastic to spend their time with us and they look forward to the discussions!</p>
+</div>
+</div>
+<div class="section" id="resources-and-technical-details">
+<span id="h2-01-resources"></span><h2>Resources and technical details<a class="headerlink" href="#resources-and-technical-details" title="Permalink to this headline">¶</a></h2>
+<p>In order to successfully pull off an informatics research internship, we’ll have to rely on quite a few different pieces of technology.
+In this section, we’ll be discussing how these pieces fit together to support your learning.</p>
+<div class="section" id="zoom">
+<h3>Zoom<a class="headerlink" href="#zoom" title="Permalink to this headline">¶</a></h3>
+<p>In case one of us cannot make it in person, we will meet over Zoom.
+The link should’ve been sent to you in Slack and it can also be found in <a class="reference external" href="https://docs.google.com/document/d/1wdeIunbTSrZUG7yONXproUCu-xK4yotg8iPdcrCoCkk/edit">this file</a>.
+We will use the same link for all events in this module (e.g., tutorials, OH, guest speakers, presentations).
+Feel free to use the room at any time if you need to meet with someone (a peer or a mentor).</p>
+</div>
+<div class="section" id="slack">
+<h3>Slack<a class="headerlink" href="#slack" title="Permalink to this headline">¶</a></h3>
+<p>We will use Slack as our primary communication platform for sending private and group messages, in addition to files, images, and <em>emojis</em>. 🙌🥳😍🤍🐢
+Let’s keep our group conversations in the <strong>#module-1 channel</strong>.</p>
+<p>We kindly ask that you are “active” during working hours on Slack.
+We encourage you to <a class="reference external" href="https://slack.com/help/articles/201355156-Configure-your-Slack-notifications">turn on notfications</a> during this time.
+You can tag people with <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>, including individual (<code class="docutils literal notranslate"><span class="pre">&#64;enze</span></code>) and multiple (<code class="docutils literal notranslate"><span class="pre">&#64;channel</span></code>) users.
+Outside of working hours though, please send notifications to others only if urgent.
+Enze will pretty much respond to any message at any time within 15 minutes. 😛</p>
+</div>
+<div class="section" id="jupyter-book">
+<h3>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h3>
+<p>This curriculum/website is created using Jupyter Book, which is a project that facilitates the publication of professional, interactive websites that feature computational narratives.
+We think it will greatly support your learning and we would like to point out a few features to aid your navigation and improve your experience.</p>
+<div class="section" id="embedded-content">
+<h4>Embedded content<a class="headerlink" href="#embedded-content" title="Permalink to this headline">¶</a></h4>
+<p>By now, you’ve probably realized that the Jupyter Book interface is very simple, yet very powerful, with the ability to embed all sorts of content (e.g., Google Slides, Slido polls, images, links, YouTube videos).
+This means we’re able to keep all of the curriculum materials for this module in a centralized location, which hopefully makes it easier for you to keep track of everything.
+There’s a handy search bar and navigation bar on the left-hand side for you to quickly locate content, and we encourage you to click around on your own time to familiarize yourself with the interface. 🙂
+Please note that external links will open <em>in the same tab</em>, so you’ll have to right-click or <kbd>Ctrl</kbd>+<kbd>Click</kbd> to open links in a new tab.</p>
+</div>
+<div class="section" id="datahub">
+<h4>DataHub<a class="headerlink" href="#datahub" title="Permalink to this headline">¶</a></h4>
+<p>We will be conducting tutorials in the <a class="reference external" href="https://www.python.org/">Python programming language</a> and executing the Python code using interactive <a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a> <span id="id1">[<a class="reference internal" href="#id35">1</a>]</span>.
+The principal reason we’re using Jupyter Book for this curriculum is because this software allows us to directly compile Jupyter notebooks into this website while maintaining links back to the original notebooks.
+We can then run the notebooks in the cloud without having to mess with individual installations of Python, which greatly increases accessibility.
+To enable interactive code execution for these notebooks, which we will be doing throughout the tutorials, we can open the Jupyter notebook pages using the DataHub service generously provided by the <a class="reference external" href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>.
+We will demonstrate how to use DataHub in the next lesson for today.</p>
+</div>
+<div class="section" id="github-issues">
+<h4>GitHub issues<a class="headerlink" href="#github-issues" title="Permalink to this headline">¶</a></h4>
+<p>We really want this textbook to be a living document that is continually refined, and one way to do so is to make the material open source on GitHub.
+This allows anyone to collaborate on this work, <em>including you all</em>.
+If you spot an error (including typos!) or have suggestion for content, please don’t hesitate to open an issue using the GitHub icon above.</p>
+</div>
+</div>
+</div>
+<div class="section" id="our-learning-community">
+<span id="h2-01-community"></span><h2>Our learning community 🌱<a class="headerlink" href="#our-learning-community" title="Permalink to this headline">¶</a></h2>
+<div class="sidebar">
+<p class="sidebar-title">Community norms (summarized)</p>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vThaGxExpQ9odNGA1v9dzIam5lhR5pRgPIxmABLK-P2V5r3A9DkQUuj3F8HFVHtEPejUXVPsex_D0LC/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="300" align="right" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<p>In the final section, we want to open up a discussion about some community norms for creating a positive and vibrant learning community.
+We already have two listed, but would love to hear your thoughts during this quick brainstorm.
+We know it has been a very taxing year for everyone and want to make this space as welcoming and stress-free as possible.</p>
+<div class="section" id="active-learning">
+<h3>Active learning<a class="headerlink" href="#active-learning" title="Permalink to this headline">¶</a></h3>
+<p>Lectures are boring to listen to and they’re boring to give, and overall not very effective for learning.
+So, we’ll be employing <strong>active learning</strong> strategies that will give you opportunities to discuss ideas, ask questions, test hypotheses, and take agency over your learning, which research has shown to be extremely beneficial <span id="id2">[<a class="reference internal" href="#id22">2</a>]</span>.
+In addition to the more “obvious” activities like interactive coding and peer discussions, you’ll also be providing feedback frequently—for us, for your peers, and for yourselves—as opportunities for reflection on growth.
+Our hope is that you will feel comfortable participating in all of these activities (and don’t find them <em>too</em> tedious 😜) as we’ve tried to intentionally design them to maximize your learning.</p>
+</div>
+<div class="section" id="trying-new-things">
+<h3>Trying new things<a class="headerlink" href="#trying-new-things" title="Permalink to this headline">¶</a></h3>
+<p>The pandemic has really forced all of us to change [several] gears in how we operate and how we think.
+And while it has led to tremendous loss, it has also catalyzed change and opened new windows of opportunity.
+In terms of higher education, our optimism leads us to ask the following: Rather than focusing on recreating what was lost, what <em>new pedagogy</em> can we create?
+This summer internship and using Jupyter Book to develop this module’s curriculum are just two small examples of the new things your instructors are trying.</p>
+<p>We also commend you for participating in this internship, as several of you noted that research is new for you.
+That’s awesome!
+And for those of you who have done research before: well, we’re honored that you chose to come back and spend your summer with us.
+Regardless of your previous experience, it’s likely you will learn a lot of new concepts in this module, and we want to explicitly note that learning new things is <em>hard</em>. Like, <em>really</em> hard.
+As we mentioned in the kickoff meeting, we will likely fail when doing research, and <em>fail often</em>.</p>
+<p>Fortunately, once we internalize these facts, it becomes not-too-hard to chart a path forward.
+In fact, just as ML is able to learn from your failures <span id="id3">[<a class="reference internal" href="#id61">3</a>]</span>, <strong>you too will learn from your failures</strong>.
+We know that by signing up for this internship, you are all ready for this challenge and you all believe that ability can be developed (also known as a growth mindset <span id="id4">[<a class="reference internal" href="#id18">4</a>]</span>).
+With this mentality towards learning and the support of your peers and mentors, you’ll surely fluorish in this module. 🌸</p>
+</div>
+<div class="section" id="we-want-to-hear-from-you">
+<h3>We want to hear from you! 💬<a class="headerlink" href="#we-want-to-hear-from-you" title="Permalink to this headline">¶</a></h3>
+<p>Throughout this module, please do not hesitate to point out what’s confusing or offer suggestions for improvement.
+Tell us on Slack, on Zoom, or using the GitHub issues tracker, and your ideas can have a huge impact on future generations of students!</p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p id="id5"><dl class="citation">
+<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Thomas Kluyver, Benjamin Ragan-Kelley, Fernando Pérez, Brian Granger, Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Jason Grout, Sylvain Corlay, Paul Ivanov, Damián Avila, Safia Abdalla, Carol Willing, and Jupyter development team. Jupyter Notebooks - a publishing format for reproducible computational workflows. In Fernando Loizides and Birgit Scmidt, editors, <em>Positioning and Power in Academic Publishing: Players, Agents and Agendas</em>, 87–90. Netherlands, 2016. IOS Press. <a class="reference external" href="https://doi.org/10.3233/978-1-61499-649-1-87">doi:10.3233/978-1-61499-649-1-87</a>.</p>
+</dd>
+<dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Scott Freeman, Sarah Eddy, Miles McDonough, Michelle Smith, Nnadozie Okoroafor, Hannah Jordt, and Mary Wenderoth. Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences</em>, 111(23):8410–8415, 2014. <a class="reference external" href="https://doi.org/10.1073/pnas.1319030111">doi:10.1073/pnas.1319030111</a>.</p>
+</dd>
+<dt class="label" id="id61"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>Paul Raccuglia, Katherine C. Elbert, Philip D. F. Adler, Casey Falk, Malia B. Wenny, Aurelio Mollo, Matthias Zeller, Sorelle A. Friedler, Joshua Schrier, and Alexander J. Norquist. Machine-learning-assisted materials discovery using failed experiments. <em>Nature</em>, 533(7601):73–76, 2016. <a class="reference external" href="https://doi.org/10.1038/nature17439">doi:10.1038/nature17439</a>.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dd><p>Carol S. Dweck. <em>Mindset: The New Psychology of Success</em>. Ballantine Books, New York, updated edition, 2016. ISBN 978-0-345-47232-8.</p>
+</dd>
+</dl>
+</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters\01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="informatics.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Intro to MI</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="intro_python_jupyter_blank.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">foo</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Enze Chen and Mark Asta<br/>
+    
+        &copy; Copyright 2022.<br/>
+      <div class="extra_footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

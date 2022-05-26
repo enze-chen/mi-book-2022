@@ -1,0 +1,1014 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giving presentations &#8212; Introduction to Materials Informatics</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/13/presentations.html" />
+    <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Day 14: Research" href="../14/day_14.html" />
+    <link rel="prev" title="Day 13: Research" href="day_13.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-197730750-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/mi_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Introduction to Materials Informatics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Welcome! 👋
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preamble 📜
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/overview.html">
+   1. Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/setup.html">
+   2. Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../preamble/schedule.html">
+   3. Schedule (one page) 📅
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 1️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../01/day_01.html">
+   Day 01: Introductions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/informatics.html">
+     Intro to MI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/module.html">
+     Intro to Module 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../01/intro_python_jupyter_blank.html">
+     Intro to Python 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../01/homework_01.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
+       Python - Greatest hits 🚀
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../01/python_gory_details_blank.html">
+       Python - Gory details 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../02/day_02.html">
+   Day 02: MI and data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/recap_logistics.html">
+     Recap first day
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/opportunities.html">
+     Opportunities and challenges
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/file_types_blank.html">
+     Working with files 🚀
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/tabular_data_blank.html">
+     Processing tabular data 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../02/databases.html">
+     Databases
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../02/materials_project_blank.html">
+       The Materials Project 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/reading_docs.html">
+     Reading documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../02/homework_02.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../03/day_03.html">
+   Day 03: MI research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/recap_data.html">
+     Recap data discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/research_discuss.html">
+     Research discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/reading_papers.html">
+     Reading papers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/guest_mp.html">
+     Guest speaker: ???
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../03/homework_03.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../04/day_04.html">
+   Day 04: Data visualization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../04/data_viz_blank.html">
+     Intro to data visualization 🚀
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/best_practices_viz.html">
+     Best practices for visualization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/best_practices_viz_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../04/homework_04.html">
+     Homework
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../04/advanced_viz_blank.html">
+       Advanced data viz 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../05/day_05.html">
+   Day 05: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/recap_viz.html">
+     Recap visualization discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/guest_citrine.html">
+     Guest speaker: Ventura!
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../05/brief_intro_ml.html">
+     Brief intro to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../05/homework_05.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 2️⃣
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../06/day_06.html">
+   Day 06: ML speedrun (pt. 1)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../06/intro_ml.html">
+     Introduction to ML
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/intro_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../06/ml_perf.html">
+     Quantifying performance
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_perf_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/homework_06.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../07/day_07.html">
+   Day 07: ML speedrun (pt. 2)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../07/features.html">
+     Featurization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../07/features_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../07/advanced_ml.html">
+     Advanced ML methods
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../07/advanced_ml_blank.html">
+       Follow-along notebook 🚀
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../07/homework_07.html">
+     Homework
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../08/day_08.html">
+   Day 08: Research + guest speaker
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/recap_ml.html">
+     Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/guest_aionics.html">
+     Guest speaker: Austin!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/matminer_features_blank.html">
+     Matminer features 🚀
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../09/day_09.html">
+   Day 09: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../09/check_in.html">
+     Check-in meeting instructions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../10/day_10.html">
+   Day 10: Research
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Week 3️⃣
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../11/day_11.html">
+   Day 11: Juneteenth
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../12/day_12.html">
+   Day 12: Research + grad school
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/welcome_back.html">
+     Welcome back!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/grad_school.html">
+     Grad school Q&amp;A: Mark!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../12/active_learning_blank.html">
+     Intro to active learning 🚀
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="day_13.html">
+   Day 13: Research
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Giving presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../14/day_14.html">
+   Day 14: Research
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../14/pull_requests.html">
+     GitHub pull requests
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../14/peer_review.html">
+     Peer review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../15/day_15.html">
+   Day 15: SLAM presentations!
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../15/final_presentations.html">
+     Final presentations
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_1.html">
+       Ana [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_2.html">
+       Anastasia [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_3.html">
+       Jesse [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_4.html">
+       Luis [Emoji TODO]
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../15/student_5.html">
+       Sydney [Emoji TODO]
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../15/summary.html">
+     Summary
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../15/next.html">
+     What’s next?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices 📝
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../appendix/acknowl.html">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/chapters/13/presentations.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/enze-chen/mi-book-2022"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/enze-chen/mi-book-2022/issues/new?title=Issue%20on%20page%20%2Fchapters/13/presentations.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/enze-chen/mi-book-2022/edit/master/chapters/13/presentations.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-slam">
+   Example slam
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure">
+   Structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#logistics">
+   Logistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Giving presentations</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-slam">
+   Example slam
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure">
+   Structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#logistics">
+   Logistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tools">
+   Tools
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="giving-presentations">
+<span id="h1-11-presentations"></span><h1>Giving presentations<a class="headerlink" href="#giving-presentations" title="Permalink to this headline">¶</a></h1>
+<p>One of the final deliverables in this module is a presentation to showcase your research.
+Throughout the course of graduate school, you will be giving research-related talks <em>all the time</em>.
+Depending on the occasion and the audience, these talks will range in technicality and length.
+You may want to choose something short and fun when speaking to non-technical audiences, while for a thesis defense you should be prepared to delve into the technical details for up to 3 hours. 😱</p>
+<p>For this module, you will be giving a <a class="reference external" href="https://en.wikipedia.org/wiki/Science_slam"><strong>science slam</strong></a>, which is presumably named after <a class="reference external" href="https://en.wikipedia.org/wiki/Poetry_slam">poetry slams</a> (spoken word).
+In the same vein, a science slam is a short oral presentation that is given to <strong>non-expert audiences</strong>, where the focus is on communicating your work in a way that generates excitement and impresses impact, even when the audience isn’t too familiar with your field.
+It attempts to engage broader audiences in science by breaking down some of the formality and jargon in research and is great practice for science communication!</p>
+<p>Please be aware that when we say “non-experts,” we don’t [necessarily] mean a “non-technical audience without a science background.”
+All of us (interns and mentors!), for example, are “non-experts” in all but a few fields, but we are still considered a “technical audience” as we know a thing or two about science. 😜
+We will be the primary audience for your presentation, so keep that in mind when preparing your content.
+But when in doubt, error on the side of less technicality.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p><strong>Also keep in mind</strong></p>
+<p>No one:</p>
+<p>Literally nobody:</p>
+<p><em>Not a single soul</em>:</p>
+<p>Reviewer #2: I don’t like your presentation because it is too entertaining.</p>
+</div>
+<div class="section" id="example-slam">
+<h2>Example slam<a class="headerlink" href="#example-slam" title="Permalink to this headline">¶</a></h2>
+<p>There are many great examples of science slams on YouTube, but out of convenience more than anything else, here we’ve included a slam talk that Enze gave as part of his <em>remote summer research internship</em> (hey, sound familiar? 😉) last year at <a class="reference external" href="https://www.llnl.gov/">Lawrence Livermore National Laboratory</a> (LLNL).</p>
+<div align="center">
+    <iframe width="500" height="350" src="https://www.youtube.com/embed/0VJRdJ6JF3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>Some things to take note of:</p>
+<ul class="simple">
+<li><p>Enze was limited to only three minutes and three technical slides!
+Not a lot of room to squeeze content in.</p></li>
+<li><p>For the content that he did fit in, note that it was still technically rigorous (microstructure, density functional theory, thermodynamic model, etc.), but kept at a high level without going into the detailed methodology.
+This is <em>expected</em> and the focus is on crafting a cohesive narrative (but you still gotta pack some 🥩 in).</p></li>
+<li><p>Note the heavy use of figures and light use of text.
+You should similarly use figures and animations to tell your story, with clarifying text when needed.
+Note how on the second slide Enze took an existing figure he made and modified the axes labels to facilitate communication of the main idea.</p></li>
+<li><p>Similar to your situation, Enze had to make this presentation just four weeks into his ten-week summer internship.
+And so you can see that while there were one or two preliminary results, a lot of time was spent on context, motivation, impact, and future directions of the work.
+You can do the same in your slam.</p></li>
+<li><p>There were some “fun” icons, jokes, and personal quirks inserted into the presentation, even though the audience was current and retired LLNL staff scientists (read: much older folks than Enze).
+You can add in your own personality flairs (if you want) as that’s the whole purpose of slams!</p></li>
+</ul>
+<!-- ```{sidebar} Tips for effective presentations
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ4HIOq1EvZ3UUxGYc4UgryLwcmvBArR44Z7_mBgRF1moP6MK8xdYSmpsm-Dq3oluI46nUZr0UAlk-R/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+``` -->
+</div>
+<div class="section" id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<p>Alright, so how might you structure your final slam presentation?
+Let’s set the following guidelines:</p>
+<ul class="simple">
+<li><p><strong>Timing</strong>: 5-7 minutes.
+We won’t cut you off per se, but you should aim for this range in your rehearsals.
+There are six of you and factoring in a few minutes for possible questions, transitions, and delays, this will help ensure the whole thing wraps up in under an hour.</p></li>
+<li><p><strong>Slides</strong>: No more than 6 slides.
+Understand we’re limiting you to help with the time control and with focusing your narrative to the salient points.
+If you use more slides than this, you will likely go over time or you will have rushed through the slides too quickly.
+You can, like in Enze’s slam presentation, have animations and multiple pieces of content on one slide.</p></li>
+</ul>
+<p>As to the sequence of slides, here is one <em>suggestion</em> that you may or may not wish to follow:</p>
+<ol class="simple">
+<li><p>Title slide: Title of presentation, your affiliation, and one figure (that may or may not reappear later; in any case, you shouldn’t spend time discussing the figure here).</p></li>
+<li><p>Intro slide: What is the problem and why is it significant?</p></li>
+<li><p>Data/Results slide: Some data visualization, statistical analysis, initial model performance, etc.</p></li>
+<li><p>Results/Discussion slide: Screening results, materials selection, feature importance, etc.</p></li>
+<li><p>Conclusion: Key takeaways, what did <strong>you</strong> learn, what’s next, etc.</p></li>
+<li><p>Floater slide to expand on any of the above content, if you need.</p></li>
+</ol>
+<p>The above isn’t to say cram all those things onto one slide, but rather to give ideas for what you might show, depending on what you did.
+We trust that you all have enough experience to ultimately make the call on the content, sequencing, and style that works best for you and your work.
+We will <em>not</em> be asking you to submit your presentation files.</p>
+</div>
+<div class="section" id="logistics">
+<h2>Logistics<a class="headerlink" href="#logistics" title="Permalink to this headline">¶</a></h2>
+<p>Here’s the timeline this week with regards to your presentations:</p>
+<p><strong>Today</strong>: We are introducing presentations today because we want you to start thinking about them early.
+Even if you have some more data to analyze, you should have most of the pieces in place and can start compiling them into your final narrative.
+Often times, by thinking of how you want to present your research, you’ll figure out what steps remain, what figures still need to be generated, etc.
+We want to make sure you have plenty of time left to do this!</p>
+<p><strong>Tomorrow</strong>: We’ll introduce <a class="reference internal" href="../14/pull_requests.html"><span class="doc">GitHub pull requests</span></a> for how you will submit your presentation information (due Wednesday).
+You can continue to finalize your research and your presentation.</p>
+<p><strong>Wednesday</strong>: By the end of today, you should have your presentation <em>information</em> submitted.
+The presentation itself you can and should still work on, and you don’t have to submit that.</p>
+<p><strong>Thursday</strong>: In the morning scrum, we’ll decide the speaking order. 😁
+In the afternoon, we’ll start the slam presentations on Zoom <strong>at a unique Zoom link</strong> in the calendar event.
+<strong>Please feel free to invite guests</strong> to come see your (and others’) work!
+Family, friends, mentors, or anyone else you think is appropriate.</p>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<p>For your presentation slides, you can use Microsoft PowerPoint, Apple Keynote, Google Slides, <a class="reference external" href="https://www.canva.com/">Canva</a>, or a software of your choice.
+For any figures that you make, we suggest that the DPI (dots per inch) be <em>at least 300</em>, which is something you can set in matplotlib using <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html"><code class="docutils literal notranslate"><span class="pre">fig.savefig('my_figure_name.png',</span> <span class="pre">dpi=300,</span> <span class="pre">bbox_inches='tight')</span></code></a>.
+If you use figures from other sources (not made by you), that’s also fine, but <em>please cite it</em>.
+Other tools and tips for styling your presentation that we haven’t covered here are best found online.</p>
+<div class="tip admonition">
+<p class="admonition-title">Did you know?</p>
+<p><a class="reference external" href="https://science.sciencemag.org/"><em>Science</em> magazine</a>, one of the top journals that covers all fields of science, sponsors an annual <a class="reference external" href="https://www.sciencemag.org/projects/dance-your-phd">Dance Your Ph.D. contest</a>, and it’s pretty neat.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./chapters\13"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="day_13.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Day 13: Research</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../14/day_14.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Day 14: Research</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Enze Chen and Mark Asta<br/>
+    
+        &copy; Copyright 2022.<br/>
+      <div class="extra_footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+</a>
+
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

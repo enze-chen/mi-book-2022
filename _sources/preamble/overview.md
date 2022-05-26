@@ -33,8 +33,8 @@ We’ll be running the tutorials in Python for a uniform, accessible experience 
 ````
 
 In this module, you will conduct a short MI research project that is focused on using data-driven methods to improve our understanding of dielectric materials. 
-We will hold interactive tutorials in Week 1 to introduce the key concepts in MI and ensure everyone is equipped with the main programmatic tools (in Python) to succeed. 
-In Weeks 2 and 3, we’ll give you freedom to investigate a research question of interest to you, while still providing you with ample support and resources (and a few mini-lectures). 
+We will hold interactive tutorials in the first half of our time together to introduce the key concepts in MI and ensure everyone is equipped with the main programmatic tools (in Python) to succeed. 
+Then, we’ll give you freedom to investigate a research question of interest to you, while still providing you with ample support and resources (and a few mini-lectures). 
 In addition to gaining MI and programming knowledge, you will be strengthening your scientific communication skills, culminating in a short(!) final presentation to share what you learned from your research project. 
 To highlight the broad impact of data-driven methods, we also plan to host a few guest talks from MI practitioners who will share their personal experiences working in this new and exciting field.
 
@@ -44,8 +44,8 @@ To highlight the broad impact of data-driven methods, we also plan to host a few
 
 By the end of this module, you will know how to:
 - _Apply_ best practices when programmatically working with materials data (e.g., standardization, visualization, statistical analyses).
-- Use informatics tools to identify the “best” materials for a particular application.
-- Communicate your own informatics research results in a variety of ways.
+- _Use_ informatics tools and machine learning models to identify the “best” materials for a particular application.
+- _Communicate_ your own informatics research results in a variety of ways.
 
 
 
@@ -95,5 +95,6 @@ Go Bears! 🐻
 
 ```{bibliography}
 :style: unsrt
+:filter: docname in docnames
 ```
 

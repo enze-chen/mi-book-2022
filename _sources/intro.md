@@ -2,7 +2,7 @@
 # Welcome! 👋
 
 This digital, *interactive* textbook contains the curriculum for Module 1, where we will be using **materials informatics** (MI) techniques to study dielectric materials.
-This website is intended to be a one-stop-shop where you can access all of the educational materials we'll be using.
+This website is intended to be a one-stop shop where you can access all of the educational materials we'll be using.
 We are super excited that you're here and we can't wait to embark on this learning journey with you! 🌱
 
 
