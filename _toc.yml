@@ -1,0 +1,160 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/en/stable/structure/toc.html
+format                  : jb-book 
+root                    : intro
+
+parts:
+  - caption             : Preamble 📜
+    numbered            : 3
+    chapters:
+    - file              : preamble/overview
+    - file              : preamble/setup
+    - file              : preamble/schedule
+
+
+###############################################################################
+###############################################################################
+  - caption             : Week 1️⃣
+    chapters:
+    - file              : chapters/01/day_01
+      sections:
+        - file          : chapters/01/informatics
+        - file          : chapters/01/module
+        - file          : chapters/01/intro_python_jupyter_blank
+          title         : Intro to Python 🚀
+        - file          : chapters/01/homework_01
+          sections:
+            - file      : chapters/01/python_greatest_hits_blank
+              title     : Python - Greatest hits 🚀
+            - file      : chapters/01/python_gory_details_blank
+              title     : Python - Gory details 🚀
+
+    - file              : chapters/02/day_02
+      sections:
+        - file          : chapters/02/recap_logistics
+        - file          : chapters/02/opportunities
+        - file          : chapters/02/file_types_blank
+          title         : Working with files 🚀
+        - file          : chapters/02/tabular_data_blank
+          title         : Processing tabular data 🚀
+        - file          : chapters/02/databases
+          sections:
+            - file      : chapters/02/materials_project_blank
+              title     : The Materials Project 🚀
+        - file          : chapters/02/reading_docs
+        - file          : chapters/02/homework_02
+
+    - file              : chapters/03/day_03
+      sections:
+        - file          : chapters/03/recap_data
+        - file          : chapters/03/research_discuss
+        - file          : chapters/03/reading_papers
+        - file          : chapters/03/guest_mp
+        - file          : chapters/03/homework_03
+
+    - file              : chapters/04/day_04
+      sections:
+        - file          : chapters/04/data_viz_blank
+          title         : Intro to data visualization 🚀
+        - file          : chapters/04/best_practices_viz 
+          sections:
+            - file      : chapters/04/best_practices_viz_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/04/homework_04
+          sections:
+            - file      : chapters/04/advanced_viz_blank
+              title     : Advanced data viz 🚀
+
+    - file              : chapters/05/day_05
+      sections:
+        - file          : chapters/05/recap_viz
+        - file          : chapters/05/guest_citrine
+        - file          : chapters/05/brief_intro_ml
+          sections:
+            - file      : chapters/05/brief_intro_ml_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/05/homework_05
+
+
+###############################################################################
+###############################################################################
+  - caption             : Week 2️⃣
+    chapters:
+    - file              : chapters/06/day_06
+      sections:
+        - file          : chapters/06/intro_ml
+          sections:
+            - file      : chapters/06/intro_ml_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/06/ml_perf
+          sections:
+            - file      : chapters/06/ml_perf_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/06/homework_06
+
+    - file              : chapters/07/day_07
+      sections:
+        - file          : chapters/07/features
+          sections:
+            - file      : chapters/07/features_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/07/advanced_ml
+          sections:
+            - file      : chapters/07/advanced_ml_blank
+              title     : Follow-along notebook 🚀
+        - file          : chapters/07/homework_07
+
+    - file              : chapters/08/day_08
+      sections:
+        - file          : chapters/08/recap_ml
+        - file          : chapters/08/guest_aionics
+        - file          : chapters/08/matminer_features_blank
+          title         : Matminer features 🚀
+
+    - file              : chapters/09/day_09
+      sections:
+        - file          : chapters/09/check_in
+
+    - file              : chapters/10/day_10
+
+ 
+###############################################################################
+###############################################################################
+  - caption             : Week 3️⃣
+    chapters:
+    - file              : chapters/11/day_11
+
+    - file              : chapters/12/day_12
+      sections:
+        - file          : chapters/12/welcome_back
+        - file          : chapters/12/grad_school
+        - file          : chapters/12/active_learning_blank 
+          title         : Intro to active learning 🚀
+
+    - file              : chapters/13/day_13
+      sections:
+        - file          : chapters/13/presentations
+
+    - file              : chapters/14/day_14
+      sections:
+        - file          : chapters/14/pull_requests
+        - file          : chapters/14/peer_review
+
+    - file              : chapters/15/day_15
+      sections:
+        - file          : chapters/15/final_presentations
+          sections:
+            - file      : chapters/15/student_1
+            - file      : chapters/15/student_2
+            - file      : chapters/15/student_3
+            - file      : chapters/15/student_4
+            - file      : chapters/15/student_5
+        - file          : chapters/15/summary
+        - file          : chapters/15/next
+
+
+###############################################################################
+###############################################################################
+  - caption             : Appendices 📝
+    chapters:
+    - file              : appendix/acknowl

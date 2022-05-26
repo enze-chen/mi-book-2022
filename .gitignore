@@ -1,0 +1,16 @@
+# Jupyter book
+_build/
+
+# Jupyter notebook
+__pycache__
+**.egg-info
+**.ipynb_checkpoints
+.DS_Store
+**_master.ipynb
+
+# Other
+notes.md
+**mentors2.txt
+**band_gaps_only.json
+**df_holey.csv
+my_work/
