@@ -129,8 +129,6 @@ parts:
       sections:
         - file          : chapters/12/welcome_back
         - file          : chapters/12/grad_school
-        - file          : chapters/12/active_learning_blank 
-          title         : Intro to active learning 🚀
 
     - file              : chapters/13/day_13
       sections:
