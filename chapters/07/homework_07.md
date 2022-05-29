@@ -3,9 +3,9 @@
 
 ## Reading  
 
-No new readings!
-Though you may want to have a [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet) handy for stylizing your _Markdown cells_ in the Jupyter notebook so you can write notes/prose to yourself and your teammates (we only covered how to write Python code in Code cells).
-
+We understand these past two days have been a lot and don't want to pile on too much more;
+however, sometimes it helps to hear a different perspective on the same issue, so we recommend **skimming** the primer by [Wang et al.](https://drive.google.com/file/d/1Ybj77q1RvHAIzX1CnV2eEEJr78hicAZQ/view?usp=sharing) {cite}`h3-wang_2020`.
+There are some nice ideas in there!
 
 
 ## Programming
@@ -20,5 +20,6 @@ We encourage you to work with your team to decide what data you will need and ho
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames
+:keyprefix: h3-
 ```
 

@@ -29,14 +29,14 @@ The following are suggested contents, that you can also merge onto a single slid
 
 - The first slide could summarize some things you learned, tried, and/or found interesting so far. 
 **Please include at least one figure** of your data/models/other.
-- The second slide could list questions you may have going forward, a figure with a poor model, etc.
+- The second slide could list questions you may have going forward, a figure with your model performance, etc.
 
 ```{attention}
 Please don't let this check-in meeting stress you out!
 The intent is for the exact opposite! 😅
 ```
 
-Again, this meeting is one of several small checkpoints (that are admittedly in rapid-fire succession) to give you tangible milestones to work towards and keep things flowing. 🌊
+Again, this meeting is one of several small checkpoints to give you tangible milestones to work toward and keep things flowing. 🌊
 We understand this is still _early_ in a typical research process, so to clarify our expectations for what you should have prepared for this check-in, here are some examples:
 - You can produce a data visualization of some interesting (or not interesting) trends that you observed during exploratory data analysis of your feature space.
 We could then have a discussion about what other analyses to do, ML models to build, etc.

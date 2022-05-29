@@ -1,4 +1,4 @@
-(h1:11:presentations)=
+(h1:13:presentations)=
 # Giving presentations
 
 One of the final deliverables in this module is a presentation to showcase your research.
@@ -11,7 +11,7 @@ In the same vein, a science slam is a short oral presentation that is given to *
 It attempts to engage broader audiences in science by breaking down some of the formality and jargon in research and is great practice for science communication!
 
 Please be aware that when we say "non-experts," we don't [necessarily] mean a "non-technical audience without a science background."
-All of us (interns and mentors!), for example, are "non-experts" in all but a few fields, but we are still considered a "technical audience" as we know a thing or two about science. 😜
+All of us (interns and mentors), for example, are "non-experts" in all but a few fields, but we are still considered a "technical audience" as we know a thing or two about science. 😜
 We will be the primary audience for your presentation, so keep that in mind when preparing your content.
 But when in doubt, error on the side of less technicality.
 
@@ -31,7 +31,7 @@ Reviewer #2: I don't like your presentation because it is too entertaining.
 
 ## Example slam
 
-There are many great examples of science slams on YouTube, but out of convenience more than anything else, here we've included a slam talk that Enze gave as part of his _remote summer research internship_ (hey, sound familiar? 😉) last year at [Lawrence Livermore National Laboratory](https://www.llnl.gov/) (LLNL).
+There are many great examples of science slams on YouTube, but out of convenience more than anything else, here we've included a slam talk that Enze gave as part of his 2020 summer research internship at [Lawrence Livermore National Laboratory](https://www.llnl.gov/) (LLNL).
 
 <div align="center">
     <iframe width="500" height="350" src="https://www.youtube.com/embed/0VJRdJ6JF3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,19 +54,13 @@ You can add in your own personality flairs (if you want) as that's the whole pur
 
 
 
-<!-- ```{sidebar} Tips for effective presentations
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ4HIOq1EvZ3UUxGYc4UgryLwcmvBArR44Z7_mBgRF1moP6MK8xdYSmpsm-Dq3oluI46nUZr0UAlk-R/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-``` -->
-
-
-
 ## Structure
 
 Alright, so how might you structure your final slam presentation?
 Let's set the following guidelines:
 - **Timing**: 5-7 minutes.
 We won't cut you off per se, but you should aim for this range in your rehearsals.
-There are six of you and factoring in a few minutes for possible questions, transitions, and delays, this will help ensure the whole thing wraps up in under an hour.
+There are five of you and factoring in a few minutes for possible questions, transitions, and delays, this will help ensure the whole thing wraps up in an hour.
 - **Slides**: No more than 6 slides.
 Understand we're limiting you to help with the time control and with focusing your narrative to the salient points.
 If you use more slides than this, you will likely go over time or you will have rushed through the slides too quickly.
@@ -95,14 +89,11 @@ Even if you have some more data to analyze, you should have most of the pieces i
 Often times, by thinking of how you want to present your research, you'll figure out what steps remain, what figures still need to be generated, etc.
 We want to make sure you have plenty of time left to do this!
 
-**Tomorrow**: We'll introduce {doc}`../14/pull_requests` for how you will submit your presentation information (due Wednesday).
+**Tomorrow**: We'll introduce {doc}`../14/pull_requests` for how you will submit your presentation information (_due EOD tomorrow_).
 You can continue to finalize your research and your presentation.
 
-**Wednesday**: By the end of today, you should have your presentation _information_ submitted. 
-The presentation itself you can and should still work on, and you don't have to submit that.
-
-**Thursday**: In the morning scrum, we'll decide the speaking order. 😁
-In the afternoon, we'll start the slam presentations on Zoom **at a unique Zoom link** in the calendar event.
+**Friday**: In the morning scrum, we'll decide the speaking order. 😁
+We'll start the slam presentations at **10:00AM PDT** in person and on Zoom.
 **Please feel free to invite guests** to come see your (and others') work!
 Family, friends, mentors, or anyone else you think is appropriate.
 

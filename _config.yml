@@ -60,9 +60,7 @@ parse:
     - amsmath               # LaTeX math
     - colon_fence           # cleaner directives
     - dollarmath            # in-line LaTeX
-    - html_image            # parse raw HTML image syntax
     - linkify               # auto-detect HTML-like links
-    - replacements          # replace certain character sequences
     - smartquotes           # transforms quotes and dashes
     - substitution          # allows variable/dictionary substitution
 

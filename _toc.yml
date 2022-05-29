@@ -24,8 +24,6 @@ parts:
           title         : Intro to Python 🚀
         - file          : chapters/01/homework_01
           sections:
-            - file      : chapters/01/python_greatest_hits_blank
-              title     : Python - Greatest hits 🚀
             - file      : chapters/01/python_gory_details_blank
               title     : Python - Gory details 🚀
 
@@ -49,8 +47,9 @@ parts:
         - file          : chapters/03/recap_data
         - file          : chapters/03/research_discuss
         - file          : chapters/03/reading_papers
-        - file          : chapters/03/guest_mp
         - file          : chapters/03/homework_03
+          sections:
+            - file      : chapters/03/diel_guided
 
     - file              : chapters/04/day_04
       sections:
@@ -70,9 +69,6 @@ parts:
         - file          : chapters/05/recap_viz
         - file          : chapters/05/guest_citrine
         - file          : chapters/05/brief_intro_ml
-          sections:
-            - file      : chapters/05/brief_intro_ml_blank
-              title     : Follow-along notebook 🚀
         - file          : chapters/05/homework_05
 
 
@@ -82,6 +78,7 @@ parts:
     chapters:
     - file              : chapters/06/day_06
       sections:
+        - file          : chapters/06/recap_week_1
         - file          : chapters/06/intro_ml
           sections:
             - file      : chapters/06/intro_ml_blank
@@ -91,6 +88,9 @@ parts:
             - file      : chapters/06/ml_perf_blank
               title     : Follow-along notebook 🚀
         - file          : chapters/06/homework_06
+          sections:
+            - file      : chapters/06/ml_practice_blank
+              title     : More ML practice 🚀
 
     - file              : chapters/07/day_07
       sections:
@@ -107,6 +107,7 @@ parts:
     - file              : chapters/08/day_08
       sections:
         - file          : chapters/08/recap_ml
+        - file          : chapters/08/practical
         - file          : chapters/08/guest_aionics
         - file          : chapters/08/matminer_features_blank
           title         : Matminer features 🚀
