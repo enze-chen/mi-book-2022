@@ -4,6 +4,9 @@
 Welcome to day 🍀 of this module, where we will be learning an important yet often neglected skill: data visualization. 
 You'll find that the process of making compelling visualizations is not-too-hard when done programmatically and _easily_ makes you stand out amongst your peers. 😏
 
+```{note}
+Today's lessons will be fairly self-guided, so feel free to proceed through the following content at your own pace.
+```
 
 
 ## Goals for today

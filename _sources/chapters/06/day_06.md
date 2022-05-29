@@ -3,7 +3,8 @@
 
 Welcome to day 🎲 where we will finally learn about the granddaddy of them all: **machine learning (ML)**. 😎
 Based on student feedback, we've decided to split this lesson across two days to make it more manageable.
-Today we will discuss the general, foundational principles as well as special considerations for MI.
+It's also now during the second week, now that you've had more time to really dig into the dataset.
+Today we will discuss the general, foundational principles of ML and a few special considerations.
 
 
 

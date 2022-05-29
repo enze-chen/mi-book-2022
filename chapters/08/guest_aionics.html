@@ -52,12 +52,14 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/08/guest_aionics.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="foo" href="matminer_features_blank.html" />
-    <link rel="prev" title="Recap ML discussion" href="recap_ml.html" />
+    <link rel="next" title="Review of matminer features" href="matminer_features_blank.html" />
+    <link rel="prev" title="Practical considerations" href="practical.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -175,11 +177,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="../01/python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -249,7 +246,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -272,15 +269,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -288,8 +292,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,8 +307,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -320,8 +324,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -339,8 +343,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -355,22 +359,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../05/homework_05.html">
@@ -396,6 +388,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/intro_ml.html">
      Introduction to ML
@@ -430,10 +427,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -441,8 +450,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -451,8 +460,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -468,8 +477,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -492,8 +501,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -501,6 +510,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -519,8 +533,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -553,8 +567,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -569,19 +583,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +606,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../14/day_14.html">
    Day 14: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -619,8 +628,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -629,8 +638,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -815,7 +824,7 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="guest-speaker-austin">
-<span id="h1-10-guest-aionics"></span><h1>Guest speaker: Austin!<a class="headerlink" href="#guest-speaker-austin" title="Permalink to this headline">¶</a></h1>
+<span id="h1-08-guest-aionics"></span><h1>Guest speaker: Austin!<a class="headerlink" href="#guest-speaker-austin" title="Permalink to this headline">¶</a></h1>
 <a class="reference internal image-reference" href="../../_images/austin.jpg"><img alt="austin" class="align-center" src="../../_images/austin.jpg" style="width: 240px;" /></a>
 <p> </p>
 <p>The world is facing an energy crisis <span id="id1">[<a class="reference internal" href="#id14">1</a>]</span>, and new materials are certainly going to be a part of the solution.
@@ -825,7 +834,7 @@ Batteries are a hot technology (see Prof. <a class="reference external" href="ht
 This means traditional batteries R&amp;D is incredibly slow and faces a lot of the challenges that we’ve previously discussed that plague materials design and development. 🐌</p>
 <p>To help address this need, Austin co-founded the battery informatics startup <a class="reference external" href="https://aionics.io/">Aionics</a> to leverage the power of AI to improve the performance, cost, and safety of batteries.
 This is based off of the research he did during his Ph.D. in <a class="reference external" href="http://appliedphysics.stanford.edu/">Applied Physics at Stanford University</a> working with Prof. <a class="reference external" href="https://reedgroup.stanford.edu/">Evan Reed</a> and Prof. <a class="reference external" href="https://web.stanford.edu/group/cui_group/">Yi Cui</a>, where he is now an <a class="reference external" href="https://mse.stanford.edu/people/austin-sendek">Adjunct Professor of MSE</a>.
-He developed ML models to screen compounds from MP that could be promising candidates for <em>solid</em> Li-ion electrolytes <span id="id2">[<a class="reference internal" href="#id63">2</a>, <a class="reference internal" href="#id64">3</a>]</span>.
+He developed ML models to screen compounds from MP that could be promising candidates for <em>solid</em> Li-ion electrolytes <span id="id2">[<a class="reference internal" href="#id64">2</a>, <a class="reference internal" href="#id65">3</a>]</span>.
 Austin <a class="reference external" href="https://www.siskiyoudaily.com/opinion/20170516/guest-opinion-path-forward-for-siskiyou-county">proudly hails from Yreka</a> in <a class="reference external" href="https://goo.gl/maps/66CR7KNR4inYBgSR8">Siskiyou County, CA</a> and he obtained his BS in <a class="reference external" href="https://www.ucdavis.edu/majors/applied-physics">Applied Physics from UC Davis</a>.
 His Twitter handle is <a class="reference external" href="https://twitter.com/BatteryCowboy">&#64;BatteryCowboy</a>. 🤠</p>
 <div class="section" id="references">
@@ -834,10 +843,10 @@ His Twitter handle is <a class="reference external" href="https://twitter.com/Ba
 <dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Steven J. Davis, Nathan S. Lewis, Matthew Shaner, Sonia Aggarwal, Doug Arent, Inês L. Azevedo, Sally M. Benson, Thomas Bradley, Jack Brouwer, Yet-Ming Chiang, Christopher T. M. Clack, Armond Cohen, Stephen Doig, Jae Edmonds, Paul Fennell, Christopher B. Field, Bryan Hannegan, Bri-Mathias Hodge, Martin I. Hoffert, Eric Ingersoll, Paulina Jaramillo, Klaus S. Lackner, Katharine J. Mach, Michael Mastrandrea, Joan Ogden, Per F. Peterson, Daniel L. Sanchez, Daniel Sperling, Joseph Stagner, Jessika E. Trancik, Chi-Jen Yang, and Ken Caldeira. Net-zero emissions energy systems. <em>Science</em>, 2018. <a class="reference external" href="https://doi.org/10.1126/science.aas9793">doi:10.1126/science.aas9793</a>.</p>
 </dd>
-<dt class="label" id="id63"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dt class="label" id="id64"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd><p>Austin D. Sendek, Qian Yang, Ekin D. Cubuk, Karel-Alexander N. Duerloo, Yi Cui, and Evan J. Reed. Holistic computational structure screening of more than 12000 candidates for solid lithium-ion conductor materials. <em>Energy &amp; Environmental Science</em>, 10(1):306–320, 2017. <a class="reference external" href="https://doi.org/10.1039/C6EE02697D">doi:10.1039/C6EE02697D</a>.</p>
 </dd>
-<dt class="label" id="id64"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
+<dt class="label" id="id65"><span class="brackets"><a class="fn-backref" href="#id2">3</a></span></dt>
 <dd><p>Austin D. Sendek, Evan R. Antoniuk, Ekin D. Cubuk, Brandi Ransom, Brian E. Francisco, Josh Buettner-Garrett, Yi Cui, and Evan J. Reed. Combining superionic conduction and favorable decomposition products in the crystalline lithium–boron–sulfur system: A new mechanism for stabilizing solid Li-ion electrolytes. <em>ACS Applied Materials &amp; Interfaces</em>, 12(34):37957–37966, 2020. <a class="reference external" href="https://doi.org/10.1021/acsami.9b19091">doi:10.1021/acsami.9b19091</a>.</p>
 </dd>
 </dl>
@@ -870,17 +879,17 @@ His Twitter handle is <a class="reference external" href="https://twitter.com/Ba
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="recap_ml.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="practical.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Recap ML discussion</p>
+            <p class="prev-next-title">Practical considerations</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="matminer_features_blank.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">foo</p>
+        <p class="prev-next-title">Review of matminer features</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

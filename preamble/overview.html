@@ -51,6 +51,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -177,11 +179,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../chapters/01/python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="../chapters/01/python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -251,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chapters/03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -274,15 +271,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapters/03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../chapters/03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../chapters/03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -290,8 +294,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -305,8 +309,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../chapters/04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -322,8 +326,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../chapters/04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -341,8 +345,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -357,22 +361,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapters/05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../chapters/05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapters/05/homework_05.html">
@@ -398,6 +390,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../chapters/06/intro_ml.html">
      Introduction to ML
@@ -432,10 +429,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../chapters/06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../chapters/06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -443,8 +452,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -453,8 +462,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../chapters/07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -470,8 +479,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../chapters/07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -494,8 +503,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/08/day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -503,6 +512,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../chapters/08/recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapters/08/practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2">
@@ -521,8 +535,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -555,8 +569,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -571,19 +585,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapters/12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chapters/13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -599,8 +608,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/14/day_14.html">
    Day 14: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -621,8 +630,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../chapters/15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -631,8 +640,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../chapters/15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -850,9 +859,9 @@ const thebe_selector_output = ".output, .cell_output"
 <span id="h1-pre-overview"></span><h1><span class="section-number">1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <p>A slightly more descriptive title for this module could be the following:
 <strong>Data-driven understanding of dielectric materials using methods and tools from materials informatics</strong>.</p>
-<div class="figure align-center" id="id90">
+<div class="figure align-center" id="id91">
 <a class="reference internal image-reference" href="../_images/petousis_n_Eg.png"><img alt="petousis_n_Eg" src="../_images/petousis_n_Eg.png" style="width: 66%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1.1 </span><span class="caption-text">A log-log scatter plot of refractive index (<span class="math notranslate nohighlight">\(n\)</span>) vs. band gap (<span class="math notranslate nohighlight">\(E_{\mathrm{g}}\)</span>) for materials from several crystal systems (adapted from I. Petousis, et al. <span id="id1">[<a class="reference internal" href="#id53">1</a>]</span>).</span><a class="headerlink" href="#id90" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 1.1 </span><span class="caption-text">A log-log scatter plot of refractive index (<span class="math notranslate nohighlight">\(n\)</span>) vs. band gap (<span class="math notranslate nohighlight">\(E_{\mathrm{g}}\)</span>) for materials from several crystal systems (adapted from I. Petousis, et al. <span id="id1">[<a class="reference internal" href="#id54">1</a>]</span>).</span><a class="headerlink" href="#id91" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="description">
 <h2><span class="section-number">1.1. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
@@ -933,7 +942,7 @@ Go Bears! 🐻</p>
 <div class="section" id="references">
 <h2><span class="section-number">1.4. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p id="id2"><dl class="citation">
-<dt class="label" id="id53"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="id54"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Ioannis Petousis, David Mrdjenovich, Eric Ballouz, Miao Liu, Donald Winston, Wei Chen, Tanja Graf, Thomas D. Schladt, Kristin A. Persson, and Fritz B. Prinz. High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials. <em>Scientific Data</em>, 4(1):160134, 2017. <a class="reference external" href="https://doi.org/10.1038/sdata.2016.134">doi:10.1038/sdata.2016.134</a>.</p>
 </dd>
 </dl>

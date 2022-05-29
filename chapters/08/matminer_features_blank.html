@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>foo &#8212; Introduction to Materials Informatics</title>
+    <title>Review of matminer features &#8212; Introduction to Materials Informatics</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,6 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/08/matminer_features_blank.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
@@ -175,11 +179,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="../01/python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -249,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -272,15 +271,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -288,8 +294,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,8 +309,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -320,8 +326,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -339,8 +345,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -355,22 +361,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../05/homework_05.html">
@@ -396,6 +390,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/intro_ml.html">
      Introduction to ML
@@ -430,10 +429,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -441,8 +452,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -451,8 +462,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -468,8 +479,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -492,8 +503,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -501,6 +512,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2">
@@ -519,8 +535,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -553,8 +569,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -569,19 +585,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +608,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../14/day_14.html">
    Day 14: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -619,8 +630,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -629,8 +640,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -792,6 +803,131 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-python-packages">
+     Import Python packages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-fetch-and-organize-the-data">
+     Step 1: Fetch and organize the data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chemical-formula-features">
+   Chemical formula features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-str-to-composition">
+     Step 2:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       str
+      </span>
+     </code>
+     to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-3-and-4-composition-to-features">
+     Steps 3 and 4:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+     to FEATURES 💥
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-can-we-do-with-these-new-features">
+     What can we do with these new features?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crystal-structure-features">
+   Crystal structure features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automating-the-feature-extraction">
+     Automating the feature extraction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     What can we do with these new features?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scatter-plot">
+       Scatter plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#correlation-matrix">
+       Correlation matrix
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note-about-saving-composition-and-structure-and-any-other-non-standard-objects">
+     Note about saving
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Structure
+      </span>
+     </code>
+     (and any other non-standard) objects
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -799,36 +935,935 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>foo</h1>
+                <h1>Review of matminer features</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contents">
+   Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#motivation">
+   Motivation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-python-packages">
+     Import Python packages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-fetch-and-organize-the-data">
+     Step 1: Fetch and organize the data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chemical-formula-features">
+   Chemical formula features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-str-to-composition">
+     Step 2:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       str
+      </span>
+     </code>
+     to
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-3-and-4-composition-to-features">
+     Steps 3 and 4:
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+     to FEATURES 💥
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-can-we-do-with-these-new-features">
+     What can we do with these new features?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crystal-structure-features">
+   Crystal structure features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automating-the-feature-extraction">
+     Automating the feature extraction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     What can we do with these new features?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#scatter-plot">
+       Scatter plot
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#correlation-matrix">
+       Correlation matrix
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#note-about-saving-composition-and-structure-and-any-other-non-standard-objects">
+     Note about saving
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Composition
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Structure
+      </span>
+     </code>
+     (and any other non-standard) objects
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="foo">
-<h1>foo<a class="headerlink" href="#foo" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="review-of-matminer-features">
+<h1>Review of matminer features<a class="headerlink" href="#review-of-matminer-features" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>This notebook contains a series of exercises that review the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/index.html">matminer package</a> for <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/featurizer_summary.html">generating features</a> in an automated way.
+By the end of this notebook, you should be able to:</p>
+<ol class="simple">
+<li><p>Generate features from the chemical formula.</p></li>
+<li><p>Generate features from the crystal structure.</p></li>
+</ol>
+<p>We will rely on the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/index.html">matminer</a> package for implementing these algorithms.
+For those running on JupyterHub, note that <code class="docutils literal notranslate"><span class="pre">Structure</span></code> objects from Pymatgen are quite large and take up a lot of RAM, so hopefully you don’t run into any memory issues. 😬</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="#Chemical-formula-features">Chemical formula features</a></p></li>
+<li><p><a class="reference external" href="#Crystal-structure-features">Crystal structure features</a></p></li>
+</ol>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>So far, it sounds like everyone is off to a good start and thinking deeply about what properties might exhibit correlations with the dielectric constant <span class="math notranslate nohighlight">\(\varepsilon\)</span>.
+This is a really important step at the beginning of any data-driven pipeline and it’s good practice for you to assemble the code infrastructure for a few manual cases before jumping into an automated approach.</p>
+<p>That being said, you’re probably running out of materials properties that are present “by default” in MP, so it’s time to think about what <strong>new features</strong> we can generate (also called <strong>feature engineering</strong>) from the data that is there.
+We want these features to be <strong>physically meaningful</strong>, so we’ll take a look at the chemical formula and crystal structure and how we can use <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/featurizer_summary.html">featurizers from matminer</a> to convert these objects into new features.</p>
+<div class="section" id="import-python-packages">
+<h3>Import Python packages<a class="headerlink" href="#import-python-packages" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">KFold</span><span class="p">,</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">cross_val_predict</span>
 
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">:(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>       <span class="c1"># Increase figure size</span>
+                     <span class="s1">&#39;font.size&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>               <span class="c1"># Increase font size</span>
+                     <span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span><span class="s1">&#39;cm&#39;</span><span class="p">,</span>      <span class="c1"># Change math font to Computer Modern</span>
+                     <span class="s1">&#39;mathtext.rm&#39;</span><span class="p">:</span><span class="s1">&#39;serif&#39;</span><span class="p">,</span>        <span class="c1"># Documentation recommended follow-up</span>
+                     <span class="s1">&#39;lines.linewidth&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>          <span class="c1"># Thicker plot lines</span>
+                     <span class="s1">&#39;lines.markersize&#39;</span><span class="p">:</span><span class="mi">12</span><span class="p">,</span>        <span class="c1"># Larger plot points</span>
+                     <span class="s1">&#39;axes.linewidth&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>           <span class="c1"># Thicker axes lines (but not too thick)</span>
+                     <span class="s1">&#39;xtick.major.size&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>         <span class="c1"># Make the x-ticks longer (our plot is larger!)</span>
+                     <span class="s1">&#39;xtick.major.width&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>        <span class="c1"># Make the x-ticks wider</span>
+                     <span class="s1">&#39;ytick.major.size&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>         <span class="c1"># Ditto for y-ticks</span>
+                     <span class="s1">&#39;ytick.major.width&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>        <span class="c1"># Ditto for y-ticks</span>
+                     <span class="s1">&#39;xtick.direction&#39;</span><span class="p">:</span><span class="s1">&#39;in&#39;</span><span class="p">,</span> 
+                     <span class="s1">&#39;ytick.direction&#39;</span><span class="p">:</span><span class="s1">&#39;in&#39;</span><span class="p">})</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1">### Load in your MP API key</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="k">try</span><span class="p">:</span>       <span class="c1"># this is for running locally</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MAPI_KEY&#39;</span><span class="p">]</span>
+<span class="k">except</span><span class="p">:</span>    <span class="c1"># this is for running on DataHub</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../../assets/files/mp_api_key.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">api_key</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="c1"># assert helps catch potential bugs</span>
+<span class="k">assert</span> <span class="n">api_key</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;API key not set correctly in environment!&#39;</span>
+<span class="k">assert</span> <span class="n">api_key</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;API key not found in mp_api_key.txt file!&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-1-fetch-and-organize-the-data">
+<h3>Step 1: Fetch and organize the data<a class="headerlink" href="#step-1-fetch-and-organize-the-data" title="Permalink to this headline">¶</a></h3>
+<p>We haven’t shown mechanical properties much love in this module, so let’s run a MAPI query for the <strong>elastic constants</strong>, focusing on the <strong>bulk modulus</strong> <span class="math notranslate nohighlight">\(K\)</span> in particular.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymatgen.ext.matproj</span> <span class="kn">import</span> <span class="n">MPRester</span>
+
+<span class="c1"># run the query</span>
+<span class="k">with</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="k">as</span> <span class="n">mpr</span><span class="p">:</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">mpr</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">criteria</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;nelements&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>   <span class="c1"># this is just to keep the dataset small</span>
+                                  <span class="s1">&#39;e_above_hull&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$lte&#39;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">},</span> 
+                                  <span class="s1">&#39;elasticity&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;$exists&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}},</span>
+                        <span class="n">properties</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pretty_formula&#39;</span><span class="p">,</span> <span class="s1">&#39;structure&#39;</span><span class="p">,</span> <span class="s1">&#39;elasticity&#39;</span><span class="p">])</span>
+
+<span class="c1"># format data from JSON to DataFrame (tabular) --- hopefully this block looks familiar!</span>
+<span class="n">formulas</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">structures</span> <span class="o">=</span> <span class="p">[]</span>   <span class="c1"># we&#39;ll use this later</span>
+<span class="n">bulk_mod</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">:</span>
+    <span class="n">formulas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;pretty_formula&#39;</span><span class="p">])</span>
+    <span class="n">structures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;structure&#39;</span><span class="p">])</span>
+    <span class="n">bulk_mod</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s1">&#39;elasticity&#39;</span><span class="p">][</span><span class="s1">&#39;K_VRH&#39;</span><span class="p">])</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s1">&#39;formula&#39;</span><span class="p">:</span> <span class="n">formulas</span><span class="p">,</span>
+    <span class="s1">&#39;structure&#39;</span><span class="p">:</span> <span class="n">structures</span><span class="p">,</span>
+    <span class="s1">&#39;bulk_modulus&#39;</span><span class="p">:</span> <span class="n">bulk_mod</span>
+<span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "84db6ef7c5014fd5930fe6ed5fa9f7b4", "version_major": 2, "version_minor": 0}
+</script><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>formula</th>
+      <th>structure</th>
+      <th>bulk_modulus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LiB</td>
+      <td>[[2.006491   1.15845065 0.778837  ] Li, [ 2.00...</td>
+      <td>69.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LaAu</td>
+      <td>[[ 1.996426   -4.2278122   3.64861125] La, [1....</td>
+      <td>65.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HoAu</td>
+      <td>[[ 1.84639    -3.95945375  3.50895675] Ho, [1....</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FeB</td>
+      <td>[[ 1.445942   -2.6912304   2.21855775] Fe, [1....</td>
+      <td>239.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DyAu</td>
+      <td>[[ 1.857119   -3.97289882  3.52320225] Dy, [1....</td>
+      <td>87.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="chemical-formula-features">
+<h2>Chemical formula features<a class="headerlink" href="#chemical-formula-features" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>The first featurizer we’ll discuss, which is a review of the “Featurization” notebook, is the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html">composition featurizer</a>, which generates chemical features from the chemical formula.
+We will specifically showcase the <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html#matminer.featurizers.composition.composite.ElementProperty"><code class="docutils literal notranslate"><span class="pre">ElementProperty</span></code></a> class, and this time do it with a little more granularity so you can pick the features that are important to you.</p>
+<p>The procedure is as follows:</p>
+<ol class="simple">
+<li><p>Perform a MAPI query using Pymatgen to fetch data (we’ve done this already).</p></li>
+<li><p>Convert the chemical formula from <code class="docutils literal notranslate"><span class="pre">str</span></code> to a Pymatgen <a class="reference external" href="https://pymatgen.org/pymatgen.core.composition.html"><code class="docutils literal notranslate"><span class="pre">Composition</span></code></a> object in a new column.</p></li>
+<li><p>Construct an <code class="docutils literal notranslate"><span class="pre">ElementProperty()</span></code> object that specifies which new features to generate.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">featurize_dataframe()</span></code> method to generate many new columns in the <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, one for each feature.</p></li>
+</ol>
+<div class="section" id="step-2-str-to-composition">
+<h3>Step 2: <code class="docutils literal notranslate"><span class="pre">str</span></code> to <code class="docutils literal notranslate"><span class="pre">Composition</span></code><a class="headerlink" href="#step-2-str-to-composition" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matminer.featurizers.conversions</span> <span class="kn">import</span> <span class="n">StrToComposition</span>
+
+<span class="c1"># create an object for converting formula --&gt; Composition</span>
+<span class="n">str_to_comp</span> <span class="o">=</span> <span class="n">StrToComposition</span><span class="p">(</span><span class="n">target_col_id</span><span class="o">=</span><span class="s1">&#39;composition&#39;</span><span class="p">)</span>
+
+<span class="c1"># perform the conversion and add a new column to the DataFrame</span>
+<span class="n">df_comp</span> <span class="o">=</span> <span class="n">str_to_comp</span><span class="o">.</span><span class="n">featurize_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col_id</span><span class="o">=</span><span class="s1">&#39;formula&#39;</span><span class="p">)</span>
+
+<span class="c1"># show the results</span>
+<span class="n">df_comp</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "762f8e082f89447f97df4f089ae4fc3d", "version_major": 2, "version_minor": 0}
+</script><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>formula</th>
+      <th>structure</th>
+      <th>bulk_modulus</th>
+      <th>composition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LiB</td>
+      <td>[[2.006491   1.15845065 0.778837  ] Li, [ 2.00...</td>
+      <td>69.0</td>
+      <td>(Li, B)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LaAu</td>
+      <td>[[ 1.996426   -4.2278122   3.64861125] La, [1....</td>
+      <td>65.0</td>
+      <td>(La, Au)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HoAu</td>
+      <td>[[ 1.84639    -3.95945375  3.50895675] Ho, [1....</td>
+      <td>89.0</td>
+      <td>(Ho, Au)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FeB</td>
+      <td>[[ 1.445942   -2.6912304   2.21855775] Fe, [1....</td>
+      <td>239.0</td>
+      <td>(Fe, B)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DyAu</td>
+      <td>[[ 1.857119   -3.97289882  3.52320225] Dy, [1....</td>
+      <td>87.0</td>
+      <td>(Dy, Au)</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="steps-3-and-4-composition-to-features">
+<h3>Steps 3 and 4: <code class="docutils literal notranslate"><span class="pre">Composition</span></code> to FEATURES 💥<a class="headerlink" href="#steps-3-and-4-composition-to-features" title="Permalink to this headline">¶</a></h3>
+<p>Note that these chemical formulas all have two elements in them, so it’s not so intuitive what information to extract from the elements in this formula.
+Pay attention to how we are specifying the Magpie elemental features (<a class="reference external" href="https://www.nature.com/articles/npjcompumats201628">original paper</a>).
+Remember what this is doing is taking the property (such as <code class="docutils literal notranslate"><span class="pre">AtomicWeight</span></code> or <code class="docutils literal notranslate"><span class="pre">MeltingT</span></code>) of all of the constituent elements and calculating an average, maximum, minimum, etc. and using these <em>statistical quantities of elemental properties</em> as features.
+There are <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html">more composition featurizers</a> you can try, which will be left as an exercise to the reader.</p>
+<p><img alt="Magpie features" src="../../_images/magpie_features.png" /></p>
+<p><strong>Pause and reflect</strong>: Why do we calculate statistical quantities of the individual elemental features?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matminer.featurizers.composition</span> <span class="kn">import</span> <span class="n">ElementProperty</span>
+
+<span class="c1"># these are all the Magpie features. You can choose fewer if you want.</span>
+<span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Number&#39;</span><span class="p">,</span> <span class="s1">&#39;MendeleevNumber&#39;</span><span class="p">,</span> <span class="s1">&#39;AtomicWeight&#39;</span><span class="p">,</span> <span class="s1">&#39;MeltingT&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;Column&#39;</span><span class="p">,</span> <span class="s1">&#39;Row&#39;</span><span class="p">,</span> <span class="s1">&#39;CovalentRadius&#39;</span><span class="p">,</span> <span class="s1">&#39;Electronegativity&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;NsValence&#39;</span><span class="p">,</span> <span class="s1">&#39;NpValence&#39;</span><span class="p">,</span> <span class="s1">&#39;NdValence&#39;</span><span class="p">,</span> <span class="s1">&#39;NfValence&#39;</span><span class="p">,</span> <span class="s1">&#39;NValence&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;NsUnfilled&#39;</span><span class="p">,</span> <span class="s1">&#39;NpUnfilled&#39;</span><span class="p">,</span> <span class="s1">&#39;NdUnfilled&#39;</span><span class="p">,</span> <span class="s1">&#39;NfUnfilled&#39;</span><span class="p">,</span> <span class="s1">&#39;NUnfilled&#39;</span><span class="p">,</span> 
+            <span class="s1">&#39;GSvolume_pa&#39;</span><span class="p">,</span> <span class="s1">&#39;GSbandgap&#39;</span><span class="p">,</span> <span class="s1">&#39;GSmagmom&#39;</span><span class="p">,</span> <span class="s1">&#39;SpaceGroupNumber&#39;</span><span class="p">]</span>
+
+<span class="c1"># these are the statistical quantities we can compute</span>
+<span class="n">stats</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">]</span>   <span class="c1"># we can use any of &#39;mean&#39;, &#39;minimum&#39;, &#39;maximum&#39;, &#39;range&#39;, &#39;avg_dev&#39;, &#39;mode&#39;</span>
+
+<span class="n">featurizer</span> <span class="o">=</span> <span class="n">ElementProperty</span><span class="p">(</span><span class="n">data_source</span><span class="o">=</span><span class="s1">&#39;magpie&#39;</span><span class="p">,</span>
+                             <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+                             <span class="n">stats</span><span class="o">=</span><span class="n">stats</span><span class="p">)</span>
+<span class="c1"># featurizer = ElementProperty.from_preset(&#39;magpie&#39;)   # this is what we had last time</span>
+
+<span class="c1"># generate the features</span>
+<span class="n">df_features</span> <span class="o">=</span> <span class="n">featurizer</span><span class="o">.</span><span class="n">featurize_dataframe</span><span class="p">(</span><span class="n">df_comp</span><span class="p">,</span> <span class="n">col_id</span><span class="o">=</span><span class="s1">&#39;composition&#39;</span><span class="p">)</span>
+<span class="n">feature_labels</span> <span class="o">=</span> <span class="n">featurizer</span><span class="o">.</span><span class="n">feature_labels</span><span class="p">()</span>   <span class="c1"># this extracts the ugly names; but same order as &quot;features&quot; up above</span>
+
+<span class="c1"># see the changes</span>
+<span class="n">df_features</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "fe6d4a58b5064b6ab65de62dbc2d6c90", "version_major": 2, "version_minor": 0}
+</script><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>formula</th>
+      <th>structure</th>
+      <th>bulk_modulus</th>
+      <th>composition</th>
+      <th>MagpieData mean Number</th>
+      <th>MagpieData mean MendeleevNumber</th>
+      <th>MagpieData mean AtomicWeight</th>
+      <th>MagpieData mean MeltingT</th>
+      <th>MagpieData mean Column</th>
+      <th>MagpieData mean Row</th>
+      <th>MagpieData mean CovalentRadius</th>
+      <th>MagpieData mean Electronegativity</th>
+      <th>MagpieData mean NsValence</th>
+      <th>MagpieData mean NpValence</th>
+      <th>MagpieData mean NdValence</th>
+      <th>MagpieData mean NfValence</th>
+      <th>MagpieData mean NValence</th>
+      <th>MagpieData mean NsUnfilled</th>
+      <th>MagpieData mean NpUnfilled</th>
+      <th>MagpieData mean NdUnfilled</th>
+      <th>MagpieData mean NfUnfilled</th>
+      <th>MagpieData mean NUnfilled</th>
+      <th>MagpieData mean GSvolume_pa</th>
+      <th>MagpieData mean GSbandgap</th>
+      <th>MagpieData mean GSmagmom</th>
+      <th>MagpieData mean SpaceGroupNumber</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LiB</td>
+      <td>[[2.006491   1.15845065 0.778837  ] Li, [ 2.00...</td>
+      <td>69.0</td>
+      <td>(Li, B)</td>
+      <td>4.0</td>
+      <td>36.5</td>
+      <td>8.876000</td>
+      <td>1400.845</td>
+      <td>7.0</td>
+      <td>2.0</td>
+      <td>106.0</td>
+      <td>1.510</td>
+      <td>1.5</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.5</td>
+      <td>2.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3.0</td>
+      <td>11.882917</td>
+      <td>0.762</td>
+      <td>0.000000</td>
+      <td>197.5</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LaAu</td>
+      <td>[[ 1.996426   -4.2278122   3.64861125] La, [1....</td>
+      <td>65.0</td>
+      <td>(La, Au)</td>
+      <td>68.0</td>
+      <td>39.5</td>
+      <td>167.936019</td>
+      <td>1265.165</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>171.5</td>
+      <td>1.820</td>
+      <td>1.5</td>
+      <td>0.0</td>
+      <td>5.5</td>
+      <td>7.0</td>
+      <td>14.0</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>4.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>26.798750</td>
+      <td>0.000</td>
+      <td>0.000000</td>
+      <td>209.5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HoAu</td>
+      <td>[[ 1.84639    -3.95945375  3.50895675] Ho, [1....</td>
+      <td>89.0</td>
+      <td>(Ho, Au)</td>
+      <td>73.0</td>
+      <td>49.5</td>
+      <td>180.948444</td>
+      <td>1542.165</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>164.0</td>
+      <td>1.885</td>
+      <td>1.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>12.5</td>
+      <td>19.0</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.5</td>
+      <td>2.0</td>
+      <td>23.716667</td>
+      <td>0.000</td>
+      <td>0.000000</td>
+      <td>209.5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FeB</td>
+      <td>[[ 1.445942   -2.6912304   2.21855775] Fe, [1....</td>
+      <td>239.0</td>
+      <td>(Fe, B)</td>
+      <td>15.5</td>
+      <td>63.5</td>
+      <td>33.328000</td>
+      <td>2079.500</td>
+      <td>10.5</td>
+      <td>3.0</td>
+      <td>108.0</td>
+      <td>1.935</td>
+      <td>2.0</td>
+      <td>0.5</td>
+      <td>3.0</td>
+      <td>0.0</td>
+      <td>5.5</td>
+      <td>0.0</td>
+      <td>2.5</td>
+      <td>2.0</td>
+      <td>0.0</td>
+      <td>4.5</td>
+      <td>8.951250</td>
+      <td>0.762</td>
+      <td>1.055331</td>
+      <td>197.5</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DyAu</td>
+      <td>[[ 1.857119   -3.97289882  3.52320225] Dy, [1....</td>
+      <td>87.0</td>
+      <td>(Dy, Au)</td>
+      <td>72.5</td>
+      <td>48.5</td>
+      <td>179.733284</td>
+      <td>1511.165</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>164.0</td>
+      <td>1.880</td>
+      <td>1.5</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>18.5</td>
+      <td>0.5</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>2.5</td>
+      <td>23.970000</td>
+      <td>0.000</td>
+      <td>0.000000</td>
+      <td>209.5</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="what-can-we-do-with-these-new-features">
+<h3>What can we do with these new features?<a class="headerlink" href="#what-can-we-do-with-these-new-features" title="Permalink to this headline">¶</a></h3>
+<p>You can use these columns for the same things you were doing with your original features like “density” or “formation energy.”
+For example, we can plot them against the bulk modulus:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we can make a series of plots in one swell foop</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">single_feature</span> <span class="o">=</span> <span class="n">feature_labels</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_features</span><span class="p">[</span><span class="n">single_feature</span><span class="p">],</span> <span class="n">df_features</span><span class="p">[</span><span class="s1">&#39;bulk_modulus&#39;</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="n">single_feature</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;bulk modulus (MPa)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/matminer_features_blank_12_0.png" src="../../_images/matminer_features_blank_12_0.png" />
+<img alt="../../_images/matminer_features_blank_12_1.png" src="../../_images/matminer_features_blank_12_1.png" />
+<img alt="../../_images/matminer_features_blank_12_2.png" src="../../_images/matminer_features_blank_12_2.png" />
+<img alt="../../_images/matminer_features_blank_12_3.png" src="../../_images/matminer_features_blank_12_3.png" />
+</div>
+</div>
+<p>We can also compute some correlations too.
+Change the <code class="docutils literal notranslate"><span class="pre">method</span></code> in <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html"><code class="docutils literal notranslate"><span class="pre">df.corr()</span></code></a> and see what happens.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># trim the DataFrame</span>
+<span class="n">features_subset</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bulk_modulus&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">feature_labels</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">features_subset_cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">features_subset</span><span class="p">]</span>   <span class="c1"># clean it up for plotting</span>
+<span class="n">df_subset</span> <span class="o">=</span> <span class="n">df_features</span><span class="p">[</span><span class="n">features_subset</span><span class="p">]</span>
+
+<span class="c1"># construct a correlation matrix</span>
+<span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;pearson&#39;</span>
+<span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">df_subset</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">)</span>
+
+<span class="c1"># plot the correlations</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">corr_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># haha you can prob choose better colors</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">features_subset_cleaned</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">features_subset_cleaned</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">features_subset_cleaned</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">features_subset_cleaned</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s1"> correlation coefficient&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/matminer_features_blank_14_0.png" src="../../_images/matminer_features_blank_14_0.png" />
+</div>
+</div>
+<p>We think <code class="docutils literal notranslate"><span class="pre">matminer</span></code> is a pretty cool package to know, and we hope it makes your lives a little bit easier.</p>
+<div class="alert alert-block alert-warning">
+    <center><b>~ BREAK ~</b></center>
+    At this point, we highly suggest you give yourself a decent break before continuing further. 🥰
+    Get a drink of water, go grab a bite, or at least stand up and stretch to give your eyes a break.
+    You all are awesome!! 🙌
+</div></div>
+</div>
+<div class="section" id="crystal-structure-features">
+<h2>Crystal structure features<a class="headerlink" href="#crystal-structure-features" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>While chemistry/composition plays a big role in materials properties, we know that <strong>materials structure</strong> is important as well.
+After all, graphene, diamond, nanotubes, and buckyballs all have the same composition, but wildly different properties.
+Another material property that we get “for free” at least from MP is the crystal structure of that material, which is encoded as a Pymatgen <a class="reference external" href="https://pymatgen.org/pymatgen.core.structure.html"><code class="docutils literal notranslate"><span class="pre">Structure</span></code></a> object.
+As we’ve already been discussing features related to crystal structure, we would like to use the structure to engineer relevant features.
+The procedure is very similar to how we featurized the <code class="docutils literal notranslate"><span class="pre">Composition</span></code> up above.</p>
+<p>But first, let’s explore what is available in a <code class="docutils literal notranslate"><span class="pre">Structure</span></code> object (recall that we stored this in the <code class="docutils literal notranslate"><span class="pre">structure</span></code> column of our initial DataFrame after querying the MAPI).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the first structure for demonstration</span>
+<span class="n">struct</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;structure&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">struct</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The density is </span><span class="si">{</span><span class="n">struct</span><span class="o">.</span><span class="n">density</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The volume is </span><span class="si">{</span><span class="n">struct</span><span class="o">.</span><span class="n">volume</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The space group is </span><span class="si">{</span><span class="n">struct</span><span class="o">.</span><span class="n">get_space_group_info</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Full Formula (Li2 B2)
+Reduced Formula: LiB
+abc   :   4.012983   4.012983   3.115348
+angles:  90.000000  90.000000 120.000009
+Sites (4)
+  #  SP           a         b     c    magmom
+---  ----  --------  --------  ----  --------
+  0  Li    0.333333  0.666667  0.25         0
+  1  Li    0.666667  0.333333  0.75         0
+  2  B     0         0         0.5         -0
+  3  B     0         0         0           -0
+
+The density is 1.356921363983624 g cm^-3
+
+The volume is 43.448191314112066
+
+The space group is (&#39;P6_3/mmc&#39;, 194)
 </pre></div>
 </div>
 </div>
 </div>
+<div class="section" id="automating-the-feature-extraction">
+<h3>Automating the feature extraction<a class="headerlink" href="#automating-the-feature-extraction" title="Permalink to this headline">¶</a></h3>
+<p>Hmm, it seems like there’s definitely useful information contained inside the <code class="docutils literal notranslate"><span class="pre">Structure</span></code> object.
+But rather than enumerate these properties by hand, let’s see if we can extract them automatically using the following steps:</p>
+<ol class="simple">
+<li><p>Obtain the <code class="docutils literal notranslate"><span class="pre">Structure</span></code> using the MAPI (we’ve done this).</p></li>
+<li><p>Construct a structure featurizer object from matminer that determines what new features to generate.</p></li>
+<li><p>Use that object to featurize the <code class="docutils literal notranslate"><span class="pre">Structure</span></code> and add new features as columns in our DataFrame.</p></li>
+</ol>
+<p>There are <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.structure.html#submodules">many structure featurizers</a> available in matminer, and we’ll opt for the simpler <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.structure.html#matminer.featurizers.structure.order.DensityFeatures"><code class="docutils literal notranslate"><span class="pre">DensityFeatures</span></code></a> featurizer below.
+We encourage you to read about the other ones if you’re curious and we’re happy to explain what they mean.</p>
+<p><strong>NOTE</strong>: You may run out of memory at this step, and that’s OK.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matminer.featurizers.structure</span> <span class="kn">import</span> <span class="n">DensityFeatures</span>
+
+<span class="c1"># construct the featurizer object with specifications - vpa is short for &quot;volume per atom&quot;</span>
+<span class="n">featurizer</span> <span class="o">=</span> <span class="n">DensityFeatures</span><span class="p">(</span><span class="n">desired_features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;density&#39;</span><span class="p">,</span> <span class="s1">&#39;vpa&#39;</span><span class="p">,</span> <span class="s1">&#39;packing fraction&#39;</span><span class="p">])</span>
+
+<span class="c1"># perform the featurization and extract the feature names</span>
+<span class="n">df_struct</span> <span class="o">=</span> <span class="n">featurizer</span><span class="o">.</span><span class="n">featurize_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">col_id</span><span class="o">=</span><span class="s1">&#39;structure&#39;</span><span class="p">,</span> <span class="n">ignore_errors</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   <span class="c1"># there is one error</span>
+<span class="n">struct_feature_labels</span> <span class="o">=</span> <span class="n">featurizer</span><span class="o">.</span><span class="n">feature_labels</span><span class="p">()</span>
+
+<span class="c1"># clean it up and show the result</span>
+<span class="n">df_struct</span> <span class="o">=</span> <span class="n">df_struct</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_struct</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "08a84d358adb461189cbb816daabf71e", "version_major": 2, "version_minor": 0}
+</script><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>formula</th>
+      <th>structure</th>
+      <th>bulk_modulus</th>
+      <th>density</th>
+      <th>vpa</th>
+      <th>packing fraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>LiB</td>
+      <td>[[2.006491   1.15845065 0.778837  ] Li, [ 2.00...</td>
+      <td>69.0</td>
+      <td>1.356921</td>
+      <td>10.862048</td>
+      <td>0.706243</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>LaAu</td>
+      <td>[[ 1.996426   -4.2278122   3.64861125] La, [1....</td>
+      <td>65.0</td>
+      <td>9.890280</td>
+      <td>28.195798</td>
+      <td>0.733538</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HoAu</td>
+      <td>[[ 1.84639    -3.95945375  3.50895675] Ho, [1....</td>
+      <td>89.0</td>
+      <td>12.675278</td>
+      <td>23.705355</td>
+      <td>0.690884</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FeB</td>
+      <td>[[ 1.445942   -2.6912304   2.21855775] Fe, [1....</td>
+      <td>239.0</td>
+      <td>6.894128</td>
+      <td>8.027476</td>
+      <td>0.876146</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DyAu</td>
+      <td>[[ 1.857119   -3.97289882  3.52320225] Dy, [1....</td>
+      <td>87.0</td>
+      <td>12.434573</td>
+      <td>24.001961</td>
+      <td>0.682346</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Note that these are features derived from the <em>entire structure</em>, not the constituent elements (what we did for Magpie), so there’s no statistics to compute (mean, min, max, etc.).</p>
+</div>
+<div class="section" id="id1">
+<h3>What can we do with these new features?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Same thing as before!
+Since we like plots, let’s make a few plots. 🙂</p>
+<div class="section" id="scatter-plot">
+<h4>Scatter plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">single_feature</span> <span class="o">=</span> <span class="n">struct_feature_labels</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>   <span class="c1"># we pick one that&#39;s kinda cool</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_struct</span><span class="p">[</span><span class="n">single_feature</span><span class="p">],</span> <span class="n">df_struct</span><span class="p">[</span><span class="s1">&#39;bulk_modulus&#39;</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">single_feature</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;bulk modulus (MPa)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/matminer_features_blank_21_0.png" src="../../_images/matminer_features_blank_21_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="correlation-matrix">
+<h4>Correlation matrix<a class="headerlink" href="#correlation-matrix" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># trim the DataFrame</span>
+<span class="n">features_subset</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bulk_modulus&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">struct_feature_labels</span>
+<span class="n">df_subset</span> <span class="o">=</span> <span class="n">df_struct</span><span class="p">[</span><span class="n">features_subset</span><span class="p">]</span>
+
+<span class="c1"># construct a correlation matrix</span>
+<span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;pearson&#39;</span>
+<span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">df_subset</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">)</span>
+
+<span class="c1"># plot the correlations</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">corr_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">features_subset</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">features_subset</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">features_subset</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">features_subset</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">method</span><span class="si">}</span><span class="s1"> correlation coefficient&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/matminer_features_blank_23_0.png" src="../../_images/matminer_features_blank_23_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="note-about-saving-composition-and-structure-and-any-other-non-standard-objects">
+<h3>Note about saving <code class="docutils literal notranslate"><span class="pre">Composition</span></code> and <code class="docutils literal notranslate"><span class="pre">Structure</span></code> (and any other non-standard) objects<a class="headerlink" href="#note-about-saving-composition-and-structure-and-any-other-non-standard-objects" title="Permalink to this headline">¶</a></h3>
+<p>You might want to save this DataFrame/JSON as a file so you can import it and work with the data later.
+However, using the methods we currently know (<code class="docutils literal notranslate"><span class="pre">json.dump()</span></code> or <code class="docutils literal notranslate"><span class="pre">df.to_csv()</span></code>), you’ll notice that the actual <em>data object</em> is lost, and when we try to load in the file, Python does not know to interpret that “cell” of the DataFrame or the value in the JSON as a <code class="docutils literal notranslate"><span class="pre">Composition</span></code> object, but rather just a string value.
+Therefore, you may want to use the <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_pickle.html"><code class="docutils literal notranslate"><span class="pre">df.to_pickle()</span></code></a> and <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_pickle.html"><code class="docutils literal notranslate"><span class="pre">pd.read_pickle()</span></code></a> functions to export your data into a binary format.</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="#Contents">Back to top</a></p>
+<p>This concludes the review of <a class="reference external" href="https://hackingmaterials.lbl.gov/matminer/index.html">matminer</a>.
+If you have any questions, please do not hesitate to ask on Slack!</p>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"04f39c1d913740d7966a530a755fc48c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "08a84d358adb461189cbb816daabf71e": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_693efaa71a774dffa1e6551e4f11320b", "IPY_MODEL_58d9623c426d48a3893dfcf63c95e4df", "IPY_MODEL_672ea2b8fae44894bc8e1f4e3f930fd9"], "layout": "IPY_MODEL_0eb3b866066246a2b8ad5b53331ddc63"}}, "0bf74dc66e85433fa18248be00df1117": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "0eb3b866066246a2b8ad5b53331ddc63": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "101d42b8300e48fcb14efe0a05e1adb1": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_d08012ee1780449d81670b523c621107", "placeholder": "\u200b", "style": "IPY_MODEL_04f39c1d913740d7966a530a755fc48c", "value": "StrToComposition: 100%"}}, "174a0e162ceb4de7b9676c853297ff3d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "26367f3b2108490eb84d3b03c42b0b93": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2c6d4a0d050740388bd3b712bc8ced5e": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_691deed114434988bc20d46eed292532", "max": 2743.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_b0645e8682694f4ebf0a618dafebaa7b", "value": 2743.0}}, "302cff8ce53a4e419df68e908b4ef622": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "3d65601802474caf890ed9fb2917a78e": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4045e5c3197b4a259d63ec2a1f9c8cf1": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "4343a6a97d874d07a95a23a60f6ffe34": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_b2dfa98a2a114fc7af8add58b9439a88", "placeholder": "\u200b", "style": "IPY_MODEL_4045e5c3197b4a259d63ec2a1f9c8cf1", "value": "ElementProperty: 100%"}}, "44786010089a4ee5b20fe5ad5b94fa1c": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "58d9623c426d48a3893dfcf63c95e4df": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_3d65601802474caf890ed9fb2917a78e", "max": 2743.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_174a0e162ceb4de7b9676c853297ff3d", "value": 2743.0}}, "58e39dcc4958467db1832d18b317f2d0": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "5fa952cb4805469d8e62af11bfabdd05": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "61a248b56daa48e8a8efb2a74f7cea8b": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "61be47b8447543f8aab74506d0d19724": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "62f1be695fe140d68f761d2cbe3e4e06": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "63a7cc33cdd24645a2335af1175dfe5a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "672ea2b8fae44894bc8e1f4e3f930fd9": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_98def2094c424c4c83098ea7cdd9ce4b", "placeholder": "\u200b", "style": "IPY_MODEL_87c57c0594cf40ed951a15e7e83eca5c", "value": " 2743/2743 [00:06&lt;00:00, 1159.02it/s]"}}, "691deed114434988bc20d46eed292532": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "693efaa71a774dffa1e6551e4f11320b": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_d7c2ebe6613c440fa5d399587316f722", "placeholder": "\u200b", "style": "IPY_MODEL_63a7cc33cdd24645a2335af1175dfe5a", "value": "DensityFeatures: 100%"}}, "762f8e082f89447f97df4f089ae4fc3d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_101d42b8300e48fcb14efe0a05e1adb1", "IPY_MODEL_2c6d4a0d050740388bd3b712bc8ced5e", "IPY_MODEL_a5f87752e15845fdb597ca64179d8e2b"], "layout": "IPY_MODEL_99b0013c9ea74dda88a7f6c218c01e9c"}}, "78d2a8a2822841d3ae3bacbecb6ee663": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_cd654445bfff40209da792bd32a64838", "placeholder": "\u200b", "style": "IPY_MODEL_d2010d16fd10456c98ae2c80d207e004", "value": " 2743/2743 [00:14&lt;00:00, 425.46it/s]"}}, "79a6db40b1cd49e39d7fd2d6a99d0a5d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_acdfef317c66460ea79c50e3e7deee07", "placeholder": "\u200b", "style": "IPY_MODEL_62f1be695fe140d68f761d2cbe3e4e06", "value": "100%"}}, "7a71d50954464ebbbfb542e6b2c5e423": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "84db6ef7c5014fd5930fe6ed5fa9f7b4": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_79a6db40b1cd49e39d7fd2d6a99d0a5d", "IPY_MODEL_e228cc0fda5f4c2b8b697f36a305aaa7", "IPY_MODEL_78d2a8a2822841d3ae3bacbecb6ee663"], "layout": "IPY_MODEL_61a248b56daa48e8a8efb2a74f7cea8b"}}, "87c57c0594cf40ed951a15e7e83eca5c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "8ba285b14ddd43848e964c47ba3053af": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_0bf74dc66e85433fa18248be00df1117", "max": 2743.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_61be47b8447543f8aab74506d0d19724", "value": 2743.0}}, "98def2094c424c4c83098ea7cdd9ce4b": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "99b0013c9ea74dda88a7f6c218c01e9c": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a5f87752e15845fdb597ca64179d8e2b": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_26367f3b2108490eb84d3b03c42b0b93", "placeholder": "\u200b", "style": "IPY_MODEL_58e39dcc4958467db1832d18b317f2d0", "value": " 2743/2743 [00:02&lt;00:00, 136.68it/s]"}}, "acdfef317c66460ea79c50e3e7deee07": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b0645e8682694f4ebf0a618dafebaa7b": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": ""}}, "b2dfa98a2a114fc7af8add58b9439a88": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bd4fe5f1e10047288173c90f45d49040": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_de75dac03ef6462abb8a31cff7a32436", "placeholder": "\u200b", "style": "IPY_MODEL_5fa952cb4805469d8e62af11bfabdd05", "value": " 2743/2743 [00:03&lt;00:00, 1087.61it/s]"}}, "cd654445bfff40209da792bd32a64838": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d08012ee1780449d81670b523c621107": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d2010d16fd10456c98ae2c80d207e004": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "d7c2ebe6613c440fa5d399587316f722": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "de75dac03ef6462abb8a31cff7a32436": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e228cc0fda5f4c2b8b697f36a305aaa7": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_7a71d50954464ebbbfb542e6b2c5e423", "max": 2743.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_302cff8ce53a4e419df68e908b4ef622", "value": 2743.0}}, "fe6d4a58b5064b6ab65de62dbc2d6c90": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_4343a6a97d874d07a95a23a60f6ffe34", "IPY_MODEL_8ba285b14ddd43848e964c47ba3053af", "IPY_MODEL_bd4fe5f1e10047288173c90f45d49040"], "layout": "IPY_MODEL_44786010089a4ee5b20fe5ad5b94fa1c"}}}, "version_major": 2, "version_minor": 0}
+</script>
+
 
     <script type="text/x-thebe-config">
     {

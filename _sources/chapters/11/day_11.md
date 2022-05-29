@@ -1,7 +1,7 @@
 (h1:11:intro)=
 # Day 11: Juneteenth
 
-In observance of [Juneteenth](https://en.wikipedia.org/wiki/Juneteenth) (which is on a Sunday this year), today is a holiday! 🎆
+In observance of [Juneteenth](https://en.wikipedia.org/wiki/Juneteenth) (which is on a Sunday this year), today is a holiday! 🙌🏿
 This means:
 
 Please **do not**:

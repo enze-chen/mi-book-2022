@@ -10,7 +10,7 @@ How time flies.
 ## Goals for today
 
 - Continue working on your self-directed research projects.
-- Discuss tomorrow's check-in session and [sign up for a slot](https://docs.google.com/spreadsheets/d/1pO6ei4Rua8z8N9CYzgPr4ae1lBM4Cz8NmAfn36zrvNA/edit#gid=0).
+- Discuss tomorrow's check-in session and [sign up for a slot](https://docs.google.com/spreadsheets/d/1VH1nbG97xTVJqig3eme9XMOCeN_etm-ny-fZPlpD2Ag/edit?usp=sharing).
 
 
 

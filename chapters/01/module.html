@@ -52,11 +52,13 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/01/module.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="foo" href="intro_python_jupyter_blank.html" />
+    <link rel="next" title="Introduction to Python and Jupyter notebooks" href="intro_python_jupyter_blank.html" />
     <link rel="prev" title="Intro to MI" href="informatics.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -175,11 +177,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -249,7 +246,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -272,15 +269,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -288,8 +292,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,8 +307,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -320,8 +324,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -339,8 +343,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -355,22 +359,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../05/homework_05.html">
@@ -396,6 +388,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/intro_ml.html">
      Introduction to ML
@@ -430,10 +427,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -441,8 +450,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -451,8 +460,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -468,8 +477,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -492,8 +501,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../08/day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -501,6 +510,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../08/recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2">
@@ -519,8 +533,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -553,8 +567,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -569,19 +583,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +606,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../14/day_14.html">
    Day 14: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -619,8 +628,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -629,8 +638,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -1086,7 +1095,7 @@ Please note that external links will open <em>in the same tab</em>, so you’ll 
 </div>
 <div class="section" id="datahub">
 <h4>DataHub<a class="headerlink" href="#datahub" title="Permalink to this headline">¶</a></h4>
-<p>We will be conducting tutorials in the <a class="reference external" href="https://www.python.org/">Python programming language</a> and executing the Python code using interactive <a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a> <span id="id1">[<a class="reference internal" href="#id35">1</a>]</span>.
+<p>We will be conducting tutorials in the <a class="reference external" href="https://www.python.org/">Python programming language</a> and executing the Python code using interactive <a class="reference external" href="https://jupyter.org/">Jupyter notebooks</a> <span id="id1">[<a class="reference internal" href="#id36">1</a>]</span>.
 The principal reason we’re using Jupyter Book for this curriculum is because this software allows us to directly compile Jupyter notebooks into this website while maintaining links back to the original notebooks.
 We can then run the notebooks in the cloud without having to mess with individual installations of Python, which greatly increases accessibility.
 To enable interactive code execution for these notebooks, which we will be doing throughout the tutorials, we can open the Jupyter notebook pages using the DataHub service generously provided by the <a class="reference external" href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>.
@@ -1128,7 +1137,7 @@ And for those of you who have done research before: well, we’re honored that y
 Regardless of your previous experience, it’s likely you will learn a lot of new concepts in this module, and we want to explicitly note that learning new things is <em>hard</em>. Like, <em>really</em> hard.
 As we mentioned in the kickoff meeting, we will likely fail when doing research, and <em>fail often</em>.</p>
 <p>Fortunately, once we internalize these facts, it becomes not-too-hard to chart a path forward.
-In fact, just as ML is able to learn from your failures <span id="id3">[<a class="reference internal" href="#id61">3</a>]</span>, <strong>you too will learn from your failures</strong>.
+In fact, just as ML is able to learn from your failures <span id="id3">[<a class="reference internal" href="#id62">3</a>]</span>, <strong>you too will learn from your failures</strong>.
 We know that by signing up for this internship, you are all ready for this challenge and you all believe that ability can be developed (also known as a growth mindset <span id="id4">[<a class="reference internal" href="#id18">4</a>]</span>).
 With this mentality towards learning and the support of your peers and mentors, you’ll surely fluorish in this module. 🌸</p>
 </div>
@@ -1141,13 +1150,13 @@ Tell us on Slack, on Zoom, or using the GitHub issues tracker, and your ideas ca
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
 <p id="id5"><dl class="citation">
-<dt class="label" id="id35"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dt class="label" id="id36"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Thomas Kluyver, Benjamin Ragan-Kelley, Fernando Pérez, Brian Granger, Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Jason Grout, Sylvain Corlay, Paul Ivanov, Damián Avila, Safia Abdalla, Carol Willing, and Jupyter development team. Jupyter Notebooks - a publishing format for reproducible computational workflows. In Fernando Loizides and Birgit Scmidt, editors, <em>Positioning and Power in Academic Publishing: Players, Agents and Agendas</em>, 87–90. Netherlands, 2016. IOS Press. <a class="reference external" href="https://doi.org/10.3233/978-1-61499-649-1-87">doi:10.3233/978-1-61499-649-1-87</a>.</p>
 </dd>
 <dt class="label" id="id22"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd><p>Scott Freeman, Sarah Eddy, Miles McDonough, Michelle Smith, Nnadozie Okoroafor, Hannah Jordt, and Mary Wenderoth. Active learning increases student performance in science, engineering, and mathematics. <em>Proceedings of the National Academy of Sciences</em>, 111(23):8410–8415, 2014. <a class="reference external" href="https://doi.org/10.1073/pnas.1319030111">doi:10.1073/pnas.1319030111</a>.</p>
 </dd>
-<dt class="label" id="id61"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dt class="label" id="id62"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
 <dd><p>Paul Raccuglia, Katherine C. Elbert, Philip D. F. Adler, Casey Falk, Malia B. Wenny, Aurelio Mollo, Matthias Zeller, Sorelle A. Friedler, Joshua Schrier, and Alexander J. Norquist. Machine-learning-assisted materials discovery using failed experiments. <em>Nature</em>, 533(7601):73–76, 2016. <a class="reference external" href="https://doi.org/10.1038/nature17439">doi:10.1038/nature17439</a>.</p>
 </dd>
 <dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
@@ -1193,7 +1202,7 @@ Tell us on Slack, on Zoom, or using the GitHub issues tracker, and your ideas ca
     <a class='right-next' id="next-link" href="intro_python_jupyter_blank.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">foo</p>
+        <p class="prev-next-title">Introduction to Python and Jupyter notebooks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -28,14 +28,14 @@ Since we can't cover everything, we'll summarize two broad _categories_ of searc
 The first category is when you want to generally know the Python syntax for accomplishing a certain task.
 Such as resolving an error message, as the figure suggests.
 Your queries might look like the following:
-```
+```markdown
 how to create a NumPy array in Python
 how to sort a list using lambda functions in Python
 python IndexError: list index out of range
 ```
 
 These queries are structured pretty much similarly to what you'd expect (i.e., what you would say if you were asking someone else).
-For error messages, we recommend _copying the error message directly_ from your Jupyter notebook or terminal window output and throwing in "python."
+For error messages, we recommend _copying the error message directly_ from your Jupyter notebook or terminal window output and adding the word "python" to your search query.
 
 You will then get a huge list of results to sift through, so we offer some guidance on what sources might be more helpful than others:
 
@@ -65,7 +65,7 @@ The second category is when you want to learn how a specific package works, like
 Yes, you are probably thinking of a specific use case, but maybe you're also just curious as to what the possibilities are, or the package isn't popular enough to have questions on a site like Stack Overflow.
 For this, we suggest structuring your search query like:
 
-```
+```markdown
 pymatgen package documentation
 MPRester pymatgen examples
 numpy.mean function documentation
@@ -88,7 +88,7 @@ So what are the source domains that you should look for?
 The ones you'll likely come across in this module are:
 - [NumPy](https://numpy.org/doc/stable/): `numpy.org/doc/stable/`
 - [pandas](https://pandas.pydata.org/docs/): `pandas.pydata.org/docs/`
-- [Matplotlib](https://matplotlib.org/stable/contents.html): `matplotlib.org/stable/contents/html`
+- [Matplotlib](https://matplotlib.org/stable/index.html): `matplotlib.org/stable/index.html`
 - [Scikit-learn](https://scikit-learn.org/stable/index.html): `scikit-learn.org/stable/index.html`
 - [Pymatgen](https://pymatgen.org/index.html): `pymatgen.org/index.html`
 - [Matminer](https://hackingmaterials.lbl.gov/matminer/): `hackingmaterials.lbl.gov/matminer/`

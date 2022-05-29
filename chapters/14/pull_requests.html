@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/14/pull_requests.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -175,11 +177,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../01/python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="../01/python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -249,7 +246,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -272,15 +269,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -288,8 +292,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,8 +307,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -320,8 +324,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -339,8 +343,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -355,22 +359,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../05/homework_05.html">
@@ -396,6 +388,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/intro_ml.html">
      Introduction to ML
@@ -430,10 +427,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -441,8 +450,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -451,8 +460,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -468,8 +477,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -492,8 +501,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../08/day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -501,6 +510,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../08/recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2">
@@ -519,8 +533,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -553,8 +567,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -569,19 +583,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +606,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="day_14.html">
    Day 14: Research
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -619,8 +628,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -629,8 +638,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -909,40 +918,39 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="github-pull-requests">
-<span id="h1-12-pull-requests"></span><h1>GitHub pull requests<a class="headerlink" href="#github-pull-requests" title="Permalink to this headline">¶</a></h1>
-<p>In Module 1, you learned a little bit about GitHub and how it can be used to share code between developers and with the general public.
-More specifically, you used the command-line interface (CLI) to clone repositories (repos) to your local computing environment.
+<span id="h1-14-pull-requests"></span><h1>GitHub pull requests<a class="headerlink" href="#github-pull-requests" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/">GitHub</a> is a website that is commonly used to host open-source projects (like this book!) and share code between developers.
 In this lesson, we’ll continue the discussion and explore two more features of GitHub: the <strong>web user interface (UI)</strong> and <strong>pull requests (PRs)</strong>.</p>
 <div class="section" id="web-ui">
 <h2>Web UI<a class="headerlink" href="#web-ui" title="Permalink to this headline">¶</a></h2>
 <p>Chances are, you have already seen the GitHub web UI if you’ve cloned a repo before, because that’s where you will find the correct URL to clone.
-As an example, <a class="reference external" href="https://github.com/enze-chen/mi-book">here is the repo for this textbook</a>.</p>
+As an example, <a class="reference external" href="https://github.com/enze-chen/mi-book-2022">here is the repo for this textbook</a>.</p>
 <p>As you can see, the UI is fairly clean with many symbols, lots of whitespace, and light colors.
 This simplicity was <a class="reference external" href="https://github.blog/changelog/2020-06-23-design-updates-to-repositories-and-github-ui/">intentionally designed</a> to better surface repo elements and key GitHub features.
-Moreover, the developers of GitHub realized that in order to elevate GitHub to the next level and increase platform adoption, they had to start enabling more CLI features to be accessible through the UI.
+Moreover, the developers of GitHub realized that in order to elevate GitHub to the next level and increase platform adoption, they had to start enabling more features to be accessible through the UI.
 This not only improves the user experience for everyone (who doesn’t like point-and-click, drag-and-drop?), but also enables less programming-savvy users to collaborate on projects.</p>
 <p>On the main page of this textbook’s repo, you will notice that one of the most prominent features on the right-hand side is the <strong>Contributors</strong> list.
 This panel lists everyone who has made at least one change to at least one file in this repo.
 It is sensible for this to be featured since that is one of the purposes of using GitHub and credit should be given where credit is due.
-However, you’ll also notice that it’s a little sad at the moment—Enze is the only contributor. 😢</p>
+However, you’ll also notice that it’s a little sad at the moment—Enze is the only contributor (so nothing is listed). 😢</p>
 <p>But fear not!
 As stated on the first day, <em>we are a team</em>, and a team functions best when everyone contributes, so <strong>you will all soon become contributors</strong> on this wonderful team project of ours. 😍</p>
 </div>
 <div class="section" id="presentation-abstract">
 <h2>Presentation abstract<a class="headerlink" href="#presentation-abstract" title="Permalink to this headline">¶</a></h2>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQRf1t_lSmNrAxhnlQFDgN3hZUU9pnQX4B3Cn6guSBXhPEHasfAOi-F7QnuRFv8FKvB525dWd5EN70g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTb07togvAxj6dxBVqH0gXbAo7h5AgMlZJu5jKfi3JceladAzOD-SWqKJxO44NBmbOvwWgsxoLNkSH1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 <div class="section" id="pull-requests">
 <h2>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
 <p>In GitHub lingo, the phrase associated with a personal contribution to a project is a <strong>pull request</strong>, or PR.
 When you “open a PR” or “submit a PR,” what this means is that you made some changes to your personal version of a repo and you’re ready to incorporate those changes into the main, public version of that repo.
-The “pull” part of the name refers to the fact that the main project has to grab your changes, and the “request” part of the name refers to the fact that the maintainers of the project need to review and accept your changes before they can be incorporated (<strong>merged</strong> in GitHub lingo).</p>
+The “pull” part of the name refers to the fact that the main project has to grab your changes, and the “request” part of the name refers to the fact that the maintainers of the project need to review and accept your changes before they can be incorporated.</p>
 <p>PRs are used <em>all the time</em> on GitHub and in software engineering as it allows for individual contributions while maintaining certain consistency checks.
 While we cannot <em>git</em> into all the details at the moment 🤦‍, we hope you can at least appreciate why we’re teaching you this concept and now we will put these ideas into practice.
 Once you have made some changes, submitted a PR, and that PR gets approved, you will become a contributor on this project!</p>
 <div class="section" id="final-presentation-page">
 <h3>Final presentation page<a class="headerlink" href="#final-presentation-page" title="Permalink to this headline">¶</a></h3>
-<p><em>In a different tab</em>, navigate to this page of the textbook: <a class="reference internal" href="../15/final_presentations.html"><span class="doc">Final presentations</span></a>.
+<p><em>In a different tab</em>, navigate to this page of the textbook: <a class="reference internal" href="../15/final_presentations.html"><span class="doc">Final presentations</span></a> and click the sub-page with your name.
 On that page, hover over Octocat and click <span class="guilabel">✏ suggest edit</span>.</p>
 <a class="reference internal image-reference" href="../../_images/suggest_edit.png"><img alt="suggest_edit" class="align-center" src="../../_images/suggest_edit.png" style="width: 100%;" /></a>
 </div>
@@ -959,11 +967,11 @@ This should then take you to an interface that looks like the following:</p>
 <h3>Add your information<a class="headerlink" href="#add-your-information" title="Permalink to this headline">¶</a></h3>
 <p>Now find your section on that page and add the information related to your presentation.
 If you don’t have the information ready, no worries.
-Cancel the changes for now (Enze will be periodically merging in others’ changes) and you can always come back to it later by following the same steps.</p>
+Cancel the changes for now and you can always come back to it later by following the same steps.</p>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>To avoid this going, ha-ha, <em>terribly wrong</em> (i.e., “merge conflicts” in GitHub lingo), please make sure you edit your section and your section <strong>only</strong>.
-Please don’t touch any other lines, including adding/removing spaces in others’ sections!</p>
+<p>To avoid this going, ha-ha, <em>terribly wrong</em>, please make sure you edit your page and your section <strong>only</strong>.
+Please don’t touch any other pages of the book, especially not others’ sections!</p>
 </div>
 <p>For the emoji, title, and description, replace the entire <code class="docutils literal notranslate"><span class="pre">[your_XXX]</span></code> parts.
 <a class="reference external" href="https://emojipedia.org/">Emojipedia</a> is a good source for selecting cross-platform emojis.
@@ -989,7 +997,7 @@ Time to change that.</p>
 <p class="sidebar-title"></p>
 <a class="reference internal image-reference" href="../../_images/github_forked.png"><img alt="github_forked" class="align-center" src="../../_images/github_forked.png" style="width: 75%;" /></a>
 </div>
-<p>First, navigate to your forked repo by clicking [Your avatar in the top-right corner] <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Your repositories</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <strong>mi-book</strong>, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying “forked from enze-chen/mi-book.”</p>
+<p>First, navigate to your forked repo by clicking [Your avatar in the top-right corner] <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Your repositories</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <strong>mi-book-2022</strong>, which should take you to a very similar page as the main repo, except the header has the image in the sidebar, saying “forked from enze-chen/mi-book-2022.”</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <a class="reference internal image-reference" href="../../_images/github_branch.png"><img alt="github_branch" class="align-center" src="../../_images/github_branch.png" style="width: 90%;" /></a>
@@ -999,8 +1007,8 @@ As the surrounding text implies, these are different <strong>branches</strong> o
 In essence, brances allow you to keep several different versions of your code (with say, different files edited/present in each one) so that different project members can independently work on different sections/features, and only merge them with the main branch (called <code class="docutils literal notranslate"><span class="pre">master</span></code>) when ready.
 When you proposed changes with your presentation information, those changes were saved into the <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch, and so you want to add your figure to that branch as well.
 <strong>Click the branch name</strong> to switch you to that branch.</p>
-<p>Next, navigate by clicking on the folders to <code class="docutils literal notranslate"><span class="pre">assets/fig/14</span></code> where you should only see <code class="docutils literal notranslate"><span class="pre">temp.svg</span></code>, <code class="docutils literal notranslate"><span class="pre">temp.png</span></code>, and maybe a few other figures, depending on how quickly Enze has merged other students’ PRs.
-Once here, click on <span class="guilabel">Add file</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Upload files</span> and choose the image from your computer (make sure it matches the name you entered in <code class="docutils literal notranslate"><span class="pre">final_presentations.md</span></code>).
+<p>Next, navigate by clicking on the folders to <code class="docutils literal notranslate"><span class="pre">assets/fig/15</span></code> where you should only see a few other figures, depending on how quickly Enze has merged other students’ PRs.
+Once here, click on <span class="guilabel">Add file</span> <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="guilabel">Upload files</span> and choose the image from your computer (make sure it matches the name you entered in <code class="docutils literal notranslate"><span class="pre">student_N.md</span></code>).
 Then enter a descriptive title for this change and click <span class="guilabel">Commit changes</span> (commit directly to the <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch).</p>
 </div>
 <div class="section" id="finally-the-pr">
@@ -1008,29 +1016,29 @@ Then enter a descriptive title for this change and click <span class="guilabel">
 <a class="reference internal image-reference" href="../../_images/github_compare2.png"><img alt="github_compare2" class="align-center" src="../../_images/github_compare2.png" style="width: 100%;" /></a>
 <p> </p>
 <p>Almost there!
-Now you should see a yellow banner at the top with a fat <span class="guilabel">Compare &amp; pull request</span> button.
+Now you should see a yellow banner at the top with a large <span class="guilabel">Compare &amp; pull request</span> button.
 Click it!!</p>
 <p> </p>
 <a class="reference internal image-reference" href="../../_images/github_open_pr.png"><img alt="github_open_pr" class="align-center" src="../../_images/github_open_pr.png" style="width: 95%;" /></a>
 <p>This takes you to the PR dialogue, and you should note the following:</p>
 <ul class="simple">
-<li><p>Make sure that at the top, you are merging the correct source branch on the right-hand side (<code class="docutils literal notranslate"><span class="pre">your_username/mi-book:patch-1</span></code> or equivalent, <em>not</em> <code class="docutils literal notranslate"><span class="pre">master</span></code>) to the correct destination branch on the left-hand side (<code class="docutils literal notranslate"><span class="pre">enze-chen/mi-book:master</span></code>, <em>not</em> <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>).</p></li>
+<li><p>Make sure that at the top, you are merging the correct source branch on the right-hand side (<code class="docutils literal notranslate"><span class="pre">your_username/mi-book-2022:patch-1</span></code> or equivalent, <em>not</em> <code class="docutils literal notranslate"><span class="pre">master</span></code>) to the correct destination branch on the left-hand side (<code class="docutils literal notranslate"><span class="pre">enze-chen/mi-book-2022:master</span></code>, <em>not</em> <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>).</p></li>
 <li><p>Write a descriptive title for your PR.</p></li>
 <li><p>Leave the box “Allow edits by maintainers” <strong>checked</strong> ☑.</p></li>
-<li><p>At the bottom, you can further verify that the “2 files changed” are <code class="docutils literal notranslate"><span class="pre">final_presentations.md</span></code> and <code class="docutils literal notranslate"><span class="pre">name_final.png</span></code>.</p></li>
+<li><p>At the bottom, you can further verify that the “2 files changed” are <code class="docutils literal notranslate"><span class="pre">student_N.md</span></code> and <code class="docutils literal notranslate"><span class="pre">name_final.png</span></code>.</p></li>
 </ul>
 <p>If everything looks good, you can click <span class="guilabel">Create pull request</span> and then ping Enze on Slack!
 Woohoo! 🎉</p>
 <hr class="docutils" />
 <div class="tip admonition">
 <p class="admonition-title">Submission deadline</p>
-<p>A reminder that you should submit your PR <strong>by 11:59PM PT Wednesday, 07/14</strong>.
+<p>A reminder that you should submit your PR <strong>by 11:59PM PT Thursday, 06/23</strong>.
 This gives us enough time to merge it in and fix things if something breaks.</p>
 </div>
 </div>
 <div class="section" id="wait-i-made-a-mistake">
 <h3>Wait, I made a mistake!<a class="headerlink" href="#wait-i-made-a-mistake" title="Permalink to this headline">¶</a></h3>
-<p>That’s alright, just make the changes to your copy of the files/figures in your <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch and submit another PR to <code class="docutils literal notranslate"><span class="pre">enze-chen/mi-book:master</span></code>.
+<p>That’s alright, just make the changes to your copy of the files/figures in your <code class="docutils literal notranslate"><span class="pre">patch-1</span></code> branch and submit another PR to <code class="docutils literal notranslate"><span class="pre">enze-chen/mi-book-2022:master</span></code>.
 That’s the beauty of it. 🙂</p>
 </div>
 </div>

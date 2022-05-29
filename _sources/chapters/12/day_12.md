@@ -10,7 +10,7 @@ To kick off this week, Mark will be leading a Q&A on all things graduate school 
 
 - Continue working on your self-directed research projects.
 - Learn about the [unwritten] rules and [unspoken] details 😉 of the graduate school saga—from preparation, to admissions, to experience.
-- (Tentative) Do a fun tutorial on active learning for materials development.
+- (Tentative) Do a tutorial on active learning for materials development.
 
 
 

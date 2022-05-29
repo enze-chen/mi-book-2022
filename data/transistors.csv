@@ -1,0 +1,200 @@
+﻿Processor,MOS transistor count,Date,Designer,MOS process (nm),Area (mm2),"Transistor density, tr./mm2"
+"Intel 4004 (4-bit, 16-pin)","2,250",1971,Intel,"10,000 nm",12 mm2,188
+"TMX 1795 (?-bit, 24-pin)","3,078",1971,Texas Instruments,?,30.64 mm2,100.5
+"Intel 8008 (8-bit, 18-pin)","3,500",1972,Intel,"10,000 nm",14 mm2,250
+"NEC μCOM-4 (4-bit, 42-pin)","2,500",1973,NEC,"7,500 nm[29]",?,?
+Toshiba TLCS-12 (12-bit),"11,000",1973,Toshiba,"6,000 nm",32 mm2,340+
+"Intel 4040 (4-bit, 16-pin)","3,000",1974,Intel,"10,000 nm",12 mm2,250
+"Motorola 6800 (8-bit, 40-pin)","4,100",1974,Motorola,"6,000 nm",16 mm2,256
+"Intel 8080 (8-bit, 40-pin)","6,000",1974,Intel,"6,000 nm",20 mm2,300
+"TMS 1000 (4-bit, 28-pin)","8,000",1974,Texas Instruments,"8,000 nm",11 mm2,730
+"MOS Technology 6502 (8-bit, 40-pin)","4,528",1975,MOS Technology,"8,000 nm",21 mm2,216
+"Intersil IM6100 (12-bit, 40-pin; clone of PDP-8)","4,000",1975,Intersil,?,?,?
+"CDP 1801 (8-bit, 2-chip, 40-pin)","5,000",1975,RCA,?,?,?
+"RCA 1802 (8-bit, 40-pin)","5,000",1976,RCA,"5,000 nm",27 mm2,185
+"Zilog Z80 (8-bit, 4-bit ALU, 40-pin)","8,500",1976,Zilog,"4,000 nm",18 mm2,470
+"Intel 8085 (8-bit, 40-pin)","6,500",1976,Intel,"3,000 nm",20 mm2,325
+TMS9900 (16-bit),"8,000",1976,Texas Instruments,?,?,?
+Bellmac-8 (8-bit),"7,000",1977,Bell Labs,"5,000 nm",?,?
+"Motorola 6809 (8-bit with some 16-bit features, 40-pin)","9,000",1978,Motorola,"5,000 nm",21 mm2,430
+"Intel 8086 (16-bit, 40-pin)","29,000",1978,Intel,"3,000 nm",33 mm2,880
+Zilog Z8000 (16-bit),"17,500",1979,Zilog,?,?,?
+"Intel 8088 (16-bit, 8-bit data bus)","29,000",1979,Intel,"3,000 nm",33 mm2,880
+"Motorola 68000 (16/32-bit, 32-bit registers, 16-bit ALU)","68,000",1979,Motorola,"3,500 nm",44 mm2,1550
+"Intel 8051 (8-bit, 40-pin)","50,000",1980,Intel,?,?,?
+WDC 65C02,"11,500",1981,WDC,"3,000 nm",6 mm2,1920
+ROMP (32-bit),"45,000",1981,IBM,"2,000 nm",?,?
+"Intel 80186 (16-bit, 68-pin)","55,000",1982,Intel,"3,000 nm",60 mm2,920
+"Intel 80286 (16-bit, 68-pin)","134,000",1982,Intel,"1,500 nm",49 mm2,2730
+WDC 65C816 (8/16-bit),"22,000",1983,WDC,"3,000 nm[37]",9 mm2,2400
+NEC V20,"63,000",1984,NEC,?,?,?
+Motorola 68020 (32-bit; 114 pins used),"190,000",1984,Motorola,"2,000 nm",85 mm2,2200
+"Intel 80386 (32-bit, 132-pin; no cache)","275,000",1985,Intel,"1,500 nm",104 mm2,2640
+ARM 1 (32-bit; no cache),"25,000",1985,Acorn,"3,000 nm",50 mm2,500
+Novix NC4016 (16-bit),"16,000",1985,Harris Corporation,"3,000 nm[41]",?,?
+SPARC MB86900 (32-bit; no cache),"110,000",1986,Fujitsu,"1,200 nm",?,?
+NEC V60[43] (32-bit; no cache),"375,000",1986,NEC,"1,500 nm",?,?
+"ARM 2 (32-bit, 84-pin; no cache)","27,000",1986,Acorn,"2,000 nm",30.25 mm2,890
+Z80000 (32-bit; very small cache),"91,000",1986,Zilog,?,?,?
+NEC V70[43] (32-bit; no cache),"385,000",1987,NEC,"1,500 nm",?,?
+Hitachi Gmicro/200[45],"730,000",1987,Hitachi,"1,000 nm",?,?
+"Motorola 68030 (32-bit, very small caches)","273,000",1987,Motorola,800 nm,102 mm2,2680
+TI Explorer's 32-bit Lisp machine chip,"553,000",1987,Texas Instruments,"2,000 nm[47]",?,?
+DEC WRL MultiTitan,"180,000",1988,DEC WRL,"1,500 nm",61 mm2,2950
+"Intel i960 (32-bit, 33-bit memory subsystem, no cache)","250,000",1988,Intel,"1,500 nm[50]",?,?
+"Intel i960CA (32-bit, cache)","600,000",1989,Intel,800 nm,143 mm2,4200
+"Intel i860 (32/64-bit, 128-bit SIMD, cache, VLIW)","1,000,000",1989,Intel,?,?,?
+"Intel 80486 (32-bit, 4 KB cache)","1,180,235",1989,Intel,1000 nm,173 mm2,6822
+"ARM 3 (32-bit, 4 KB cache)","310,000",1989,Acorn,"1,500 nm",87 mm2,3600
+"Motorola 68040 (32-bit, 8 KB caches)","1,200,000",1990,Motorola,650 nm,152 mm2,7900
+"R4000 (64-bit, 16 KB of caches)","1,350,000",1991,MIPS,"1,000 nm",213 mm2,6340
+"ARM 6 (32-bit, no cache for this 60 variant)","35,000",1991,ARM,800 nm,?,?
+"Hitachi SH-1 (32-bit, no cache)","600,000",1992,Hitachi,800 nm,10 mm2,"60,000 (check)"
+"Intel i960CF (32-bit, cache)","900,000",1992,Intel,?,125 mm2,7200
+"DEC Alpha 21064 (64-bit, 290-pin; 16 KB of caches)","1,680,000",1992,DEC,750 nm,233.52 mm2,7190
+"Hitachi HARP-1 (32-bit, cache)","2,800,000",1993,Hitachi,500 nm,267 mm2,"10,500"
+"Pentium (32-bit, 16 KB of caches)","3,100,000",1993,Intel,800 nm,294 mm2,"10,500"
+ARM700 (32-bit; 8 KB cache),"578,977",1994,ARM,700 nm,68.51 mm2,8451
+"MuP21 (21-bit,[56] 40-pin; includes video)","7,000",1994,Offete Enterprises,1200 nm,?,?
+"Motorola 68060 (32-bit, 16 KB of caches)","2,500,000",1994,Motorola,600 nm,218 mm2,"11,500"
+"PowerPC 601 (32-bit, 32 KB of caches)","2,800,000",1994,Apple/IBM/Motorola,600 nm,121 mm2,"23,000"
+"SA-110 (32-bit, 32 KB of caches)","2,500,000",1995,Acorn/DEC/Apple,350 nm,50 mm2,"50,000"
+"Pentium Pro (32-bit, 16 KB of caches;[59] L2 cache on-package, but on separate die)","5,500,000",1995,Intel,500 nm,307 mm2,"18,000"
+"AMD K5 (32-bit, caches)","4,300,000",1996,AMD,500 nm,251 mm2,"17,000"
+"Hitachi SH-4 (32-bit, caches)","10,000,000",1997,Hitachi,200 nm[62],42 mm2[63],"238,000 (check)"
+"Pentium II Klamath (32-bit, 64-bit SIMD, caches)","7,500,000",1997,Intel,350 nm,195 mm2,"39,000"
+"AMD K6 (32-bit, caches)","8,800,000",1997,AMD,350 nm,162 mm2,"54,000"
+F21 (21-bit; includes e.g. video),"15,000",1997,Offete Enterprises,?,?,?
+"AVR (8-bit, 40-pin; w/memory)","140,000",1997,Nordic VLSI/Atmel,?,?,?
+"Pentium II Deschutes (32-bit, large cache)","7,500,000",1998,Intel,250 nm,113 mm2,"66,000"
+"ARM 9TDMI (32-bit, no cache)","111,000",1999,Acorn,350 nm,4.8 mm2,"23,100"
+"Pentium III Katmai (32-bit, 128-bit SIMD, caches)","9,500,000",1999,Intel,250 nm,128 mm2,"74,000"
+"Emotion Engine (64-bit, 128-bit SIMD, cache)","13,500,000",1999,Sony/Toshiba,180 nm[66],240 mm2[67],"56,300"
+"Pentium II Mobile Dixon (32-bit, caches)","27,400,000",1999,Intel,180 nm,180 mm2,"152,000"
+"AMD K6-III (32-bit, caches)","21,300,000",1999,AMD,250 nm,118 mm2,"181,000"
+"AMD K7 (32-bit, caches)","22,000,000",1999,AMD,250 nm,184 mm2,"120,000"
+"Gekko (32-bit, large cache)","21,000,000",2000,IBM/Nintendo,180 nm,43 mm2,"490,000 (check)"
+"Pentium III Coppermine (32-bit, large cache)","21,000,000",2000,Intel,180 nm,80 mm2,"263,000"
+"Pentium 4 Willamette (32-bit, large cache)","42,000,000",2000,Intel,180 nm,217 mm2,"194,000"
+"SPARC64 V (64-bit, large cache)","191,000,000",2001,Fujitsu,130 nm[70],290 mm2,"659,000"
+"Pentium III Tualatin (32-bit, large cache)","45,000,000",2001,Intel,130 nm,81 mm2,"556,000"
+"Pentium 4 Northwood (32-bit, large cache)","55,000,000",2002,Intel,130 nm,145 mm2,"379,000"
+"Itanium 2 McKinley (64-bit, large cache)","220,000,000",2002,Intel,180 nm,421 mm2,"523,000"
+"DEC Alpha 21364 (64-bit, 946-pin, SIMD, very large caches)","152,000,000",2003,DEC,180 nm,397 mm2,"383,000"
+"Barton (32-bit, large cache)","54,300,000",2003,AMD,130 nm,101 mm2,"538,000"
+"AMD K8 (64-bit, large cache)","105,900,000",2003,AMD,130 nm,193 mm2,"548,700"
+Itanium 2 Madison 6M (64-bit),"410,000,000",2003,Intel,130 nm,374 mm2,"1,096,000"
+"Pentium 4 Prescott (32-bit, large cache)","112,000,000",2004,Intel,90 nm,110 mm2,"1,018,000"
+"SPARC64 V+ (64-bit, large cache)","400,000,000",2004,Fujitsu,90 nm,294 mm2,"1,360,000"
+Itanium 2 (64-bit;9 MB cache),"592,000,000",2004,Intel,130 nm,432 mm2,"1,370,000"
+"Pentium 4 Prescott-2M (32-bit, large cache)","169,000,000",2005,Intel,90 nm,143 mm2,"1,182,000"
+"Pentium D Smithfield (32-bit, large cache)","228,000,000",2005,Intel,90 nm,206 mm2,"1,107,000"
+"Xenon (64-bit, 128-bit SIMD, large cache)","165,000,000",2005,IBM,90 nm,?,?
+"Cell (32-bit, cache)","250,000,000",2005,Sony/IBM/Toshiba,90 nm,221 mm2,"1,131,000"
+"Pentium 4 Cedar Mill (32-bit, large cache)","184,000,000",2006,Intel,65 nm,90 mm2,"2,044,000"
+"Pentium D Presler (32-bit, large cache)","362,000,000",2006,Intel,65 nm,162 mm2,"2,235,000"
+"Core 2 Duo Conroe (dual-core 64-bit, large caches)","291,000,000",2006,Intel,65 nm,143 mm2,"2,035,000"
+"Dual-core Itanium 2 (64-bit, SIMD, large caches)","1,700,000,000",2006,Intel,90 nm,596 mm2,"2,852,000"
+"AMD K10 quad-core 2M L3 (64-bit, large caches)","463,000,000",2007,AMD,65 nm,283 mm2,"1,636,000"
+"ARM Cortex-A9 (32-bit, (optional) SIMD, caches)","26,000,000",2007,ARM,45 nm,31 mm2,"839,000"
+"Core 2 Duo Wolfdale (dual-core 64-bit, SIMD, caches)","411,000,000",2007,Intel,45 nm,107 mm2,"3,841,000"
+"POWER6 (64-bit, large caches)","789,000,000",2007,IBM,65 nm,341 mm2,"2,314,000"
+"Core 2 Duo Allendale (dual-core 64-bit, SIMD, large caches)","169,000,000",2007,Intel,65 nm,111 mm2,"1,523,000"
+Uniphier,"250,000,000",2007,Matsushita,45 nm,?,?
+"SPARC64 VI (64-bit, SIMD, large caches)","540,000,000",2007,Fujitsu,90 nm,421 mm2,"1,283,000"
+"Core 2 Duo Wolfdale 3M (dual-core 64-bit, SIMD, large caches)","230,000,000",2008,Intel,45 nm,83 mm2,"2,771,000"
+"Core i7 (quad-core 64-bit, SIMD, large caches)","731,000,000",2008,Intel,45 nm,263 mm2,"2,779,000"
+"AMD K10 quad-core 6M L3 (64-bit, SIMD, large caches)","758,000,000",2008,AMD,45 nm,258 mm2,"2,938,000"
+"Atom (32-bit, large cache)","47,000,000",2008,Intel,45 nm,24 mm2,"1,958,000"
+"SPARC64 VII (64-bit, SIMD, large caches)","600,000,000",2008,Fujitsu,65 nm,445 mm2,"1,348,000"
+"Six-core Xeon 7400 (64-bit, SIMD, large caches)","1,900,000,000",2008,Intel,45 nm,503 mm2,"3,777,000"
+"Six-core Opteron 2400 (64-bit, SIMD, large caches)","904,000,000",2009,AMD,45 nm,346 mm2,"2,613,000"
+"SPARC64 VIIIfx (64-bit, SIMD, large caches)","760,000,000",2009,Fujitsu,45 nm,513 mm2,"1,481,000"
+"SPARC T3 (16-core 64-bit, SIMD, large caches)","1,000,000,000",2010,Sun/Oracle,40 nm,377 mm2,"2,653,000"
+Six-core Core i7 (Gulftown),"1,170,000,000",2010,Intel,32 nm,240 mm2,"4,875,000"
+"POWER7 32M L3 (8-core 64-bit, SIMD, large caches)","1,200,000,000",2010,IBM,45 nm,567 mm2,"2,116,000"
+"Quad-core z196[81] (64-bit, very large caches)","1,400,000,000",2010,IBM,45 nm,512 mm2,"2,734,000"
+"Quad-core Itanium Tukwila (64-bit, SIMD, large caches)","2,000,000,000",2010,Intel,65 nm,699 mm2,"2,861,000"
+"Xeon Nehalem-EX (8-core 64-bit, SIMD, large caches)","2,300,000,000",2010,Intel,45 nm,684 mm2,"3,363,000"
+"SPARC64 IXfx (64-bit, SIMD, large caches)","1,870,000,000",2011,Fujitsu,40 nm,484 mm2,"3,864,000"
+"Quad-core + GPU Core i7 (64-bit, SIMD, large caches)","1,160,000,000",2011,Intel,32 nm,216 mm2,"5,370,000"
+Six-core Core i7/8-core Xeon E5,"2,270,000,000",2011,Intel,32 nm,434 mm2,"5,230,000"
+"Xeon Westmere-EX (10-core 64-bit, SIMD, large caches)","2,600,000,000",2011,Intel,32 nm,512 mm2,"5,078,000"
+"Atom ""Medfield"" (64-bit)","432,000,000",2012,Intel,32 nm,64 mm2,"6,750,000"
+"SPARC64 X (64-bit, SIMD, caches)","2,990,000,000",2012,Fujitsu,28 nm,600 mm2,"4,983,000"
+"AMD Bulldozer (8-core 64-bit, SIMD, caches)","1,200,000,000",2012,AMD,32 nm,315 mm2,"3,810,000"
+"Quad-core + GPU AMD Trinity (64-bit, SIMD, caches)","1,303,000,000",2012,AMD,32 nm,246 mm2,"5,297,000"
+"Quad-core + GPU Core i7 Ivy Bridge (64-bit, SIMD, caches)","1,400,000,000",2012,Intel,22 nm,160 mm2,"8,750,000"
+"POWER7+ (8-core 64-bit, SIMD, 80 MB L3 cache)","2,100,000,000",2012,IBM,32 nm,567 mm2,"3,704,000"
+"Six-core zEC12 (64-bit, SIMD, large caches)","2,750,000,000",2012,IBM,32 nm,597 mm2,"4,606,000"
+"Itanium Poulson (8-core 64-bit, SIMD, caches)","3,100,000,000",2012,Intel,32 nm,544 mm2,"5,699,000"
+"Xeon Phi (61-core 32-bit, 512-bit SIMD, caches)","5,000,000,000",2012,Intel,22 nm,720 mm2,"6,944,000"
+"Apple A7 (dual-core 64/32-bit ARM64, ""mobile SoC"", SIMD, caches)","1,000,000,000",2013,Apple,28 nm,102 mm2,"9,804,000"
+"Six-core Core i7 Ivy Bridge E (64-bit, SIMD, caches)","1,860,000,000",2013,Intel,22 nm,256 mm2,"7,266,000"
+"POWER8 (12-core 64-bit, SIMD, caches)","4,200,000,000",2013,IBM,22 nm,650 mm2,"6,462,000"
+"Xbox One main SoC (64-bit, SIMD, caches)","5,000,000,000",2013,Microsoft/AMD,28 nm,363 mm2,"13,770,000"
+"Quad-core + GPU Core i7 Haswell (64-bit, SIMD, caches)","1,400,000,000",2014,Intel,22 nm,177 mm2,"7,910,000"
+"Apple A8 (dual-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","2,000,000,000",2014,Apple,20 nm,89 mm2,"22,470,000"
+"Core i7 Haswell-E (8-core 64-bit, SIMD, caches)","2,600,000,000",2014,Intel,22 nm,355 mm2,"7,324,000"
+"Apple A8X (tri-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","3,000,000,000",2014,Apple,20 nm,128 mm2,"23,440,000"
+"Xeon Ivy Bridge-EX (15-core 64-bit, SIMD, caches)","4,310,000,000",2014,Intel,22 nm,541 mm2,"7,967,000"
+"Xeon Haswell-E5 (18-core 64-bit, SIMD, caches)","5,560,000,000",2014,Intel,22 nm,661 mm2,"8,411,000"
+"Quad-core + GPU GT2 Core i7 Skylake K (64-bit, SIMD, caches)","1,750,000,000",2015,Intel,14 nm,122 mm2,"14,340,000"
+"Dual-core + GPU Iris Core i7 Broadwell-U (64-bit, SIMD, caches)","1,900,000,000",2015,Intel,14 nm,133 mm2,"14,290,000"
+"Apple A9 (dual-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","2,000,000,000",2015,Apple,14 nm,96 mm2,"20,800,000+"
+"Apple A9X (dual core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","3,000,000,000",2015,Apple,16 nm,143.9 mm2,"20,800,000+"
+"IBM z13 (64-bit, caches)","3,990,000,000",2015,IBM,22 nm,678 mm2,"5,885,000"
+IBM z13 Storage Controller,"7,100,000,000",2015,IBM,22 nm,678 mm2,"10,472,000"
+"SPARC M7 (32-core 64-bit, SIMD, caches)","10,000,000,000",2015,Oracle,20 nm,?,?
+"Qualcomm Snapdragon 835 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","3,000,000,000",2016,Qualcomm,10 nm,72.3 mm2,"41,490,000"
+"Core i7 Broadwell-E (10-core 64-bit, SIMD, caches)","3,200,000,000",2016,Intel,14 nm,246 mm2[100],"13,010,000"
+"Apple A10 Fusion (quad-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","3,300,000,000",2016,Apple,16 nm,125 mm2,"26,400,000"
+"HiSilicon Kirin 960 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","4,000,000,000",2016,Huawei,16 nm,110.00 mm2,"36,360,000"
+"Xeon Broadwell-E5 (22-core 64-bit, SIMD, caches)","7,200,000,000",2016,Intel,14 nm,456 mm2,"15,790,000"
+"Xeon Phi (72-core 64-bit, 512-bit SIMD, caches)","8,000,000,000",2016,Intel,14 nm,683 mm2,"11,710,000"
+"Qualcomm Snapdragon 845 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","5,300,000,000",2017,Qualcomm,10 nm,94 mm2,"56,400,000"
+"Qualcomm Snapdragon 850 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","5,300,000,000",2017,Qualcomm,10 nm,94 mm2,"56,400,000"
+"Apple A11 Bionic (hexa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","4,300,000,000",2017,Apple,10 nm,89.23 mm2,"48,190,000"
+"Zeppelin SoC Ryzen (64-bit, SIMD, caches)","4,800,000,000",2017,AMD,14 nm,192 mm2,"25,000,000"
+"Ryzen 5 1600 Ryzen (64-bit, SIMD, caches)","4,800,000,000",2017,AMD,14 nm,213 mm2,"22,530,000"
+"Ryzen 5 1600 X Ryzen (64-bit, SIMD, caches)","4,800,000,000",2017,AMD,14 nm,213 mm2,"22,530,000"
+"IBM z14 (64-bit, SIMD, caches)","6,100,000,000",2017,IBM,14 nm,696 mm2,"8,764,000"
+IBM z14 Storage Controller (64-bit),"9,700,000,000",2017,IBM,14 nm,696 mm2,"13,940,000"
+"HiSilicon Kirin 970 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","5,500,000,000",2017,Huawei,10 nm,96.72 mm2,"56,900,000"
+"Xbox One X (Project Scorpio) main SoC (64-bit, SIMD, caches)","7,000,000,000",2017,Microsoft/AMD,16 nm,360 mm2[110],"19,440,000"
+"Xeon Platinum 8180 (28-core 64-bit, SIMD, caches)","8,000,000,000",2017,Intel,14 nm,?,?
+"POWER9 (64-bit, SIMD, caches)","8,000,000,000",2017,IBM,14 nm,695 mm2,"11,500,000"
+"Freedom U500 Base Platform Chip (E51, 4×U54) RISC-V (64-bit, caches)","250,000,000",2017,SiFive,28 nm,~30 mm2,"8,330,000"
+"SPARC64 XII (12-core 64-bit, SIMD, caches)","5,450,000,000",2017,Fujitsu,20 nm,795 mm2,"6,850,000"
+"Apple A10X Fusion (hexa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","4,300,000,000",2017,Apple,10 nm,96.40 mm2,"44,600,000"
+"Centriq 2400 (64/32-bit, SIMD, caches)","18,000,000,000",2017,Qualcomm,10 nm,398 mm2,"45,200,000"
+"AMD Epyc (32-core 64-bit, SIMD, caches)","19,200,000,000",2017,AMD,14 nm,768 mm2,"25,000,000"
+"HiSilicon Kirin 710 (octa-core ARM64 ""mobile SoC"", SIMD, caches)","5,500,000,000",2018,Huawei,12 nm,?,?
+"Apple A12 Bionic (hexa-core ARM64 ""mobile SoC"", SIMD, caches)","6,900,000,000",2018,Apple,7 nm,83.27 mm2,"82,900,000"
+"HiSilicon Kirin 980 (octa-core ARM64 ""mobile SoC"", SIMD, caches)","6,900,000,000",2018,Huawei,7 nm,74.13 mm2,"93,100,000"
+"Qualcomm Snapdragon 8cx / SCX8180 (octa-core ARM64 ""mobile SoC"", SIMD, caches)","8,500,000,000",2018,Qualcomm,7 nm,112 mm2,"75,900,000"
+"Qualcomm Snapdragon 855 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","6,700,000,000",2019,Qualcomm,7 nm,73 mm²,"91,800,000"
+"Qualcomm Snapdragon 865 (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","10,300,000,000",2020,Qualcomm,7 nm,83.54 mm2[123],"123,300,000"
+"Apple A12X Bionic (octa-core 64/32-bit ARM64 ""mobile SoC"", SIMD, caches)","10,000,000,000",2018,Apple,7 nm,122 mm2,"82,000,000"
+"Fujitsu A64FX (64/32-bit, SIMD, caches)","8,786,000,000",2018,Fujitsu,7 nm,?,?
+Tegra Xavier SoC (64/32-bit),"9,000,000,000",2018,Nvidia,12 nm,350 mm2,"25,700,000"
+"AMD Ryzen 7 3700X (64-bit, SIMD, caches, I/O die)","5,990,000,000",2019,AMD,7 & 12 nm (TSMC),199 (74+125) mm2,"30,100,000"
+HiSilicon Kirin 990 4G,"8,000,000,000",2019,Huawei,7 nm,90.00 mm2,"89,000,000"
+"Apple A13 (hexa-core 64-bit ARM64 ""mobile SoC"", SIMD, caches)","8,500,000,000",2019,Apple,7 nm,98.48 mm2,"86,300,000"
+"IBM z15 CP chip (12 cores, 256 MB L3 cache)","9,200,000,000",2019,IBM,14 nm,696 mm2,"13,220,000"
+IBM z15 SC chip (960 MB L4 cache),"12,200,000,000",2019,IBM,14 nm,696 mm2,"17,530,000"
+"AMD Ryzen 9 3900X (64-bit, SIMD, caches, I/O die)","9,890,000,000",2019,AMD,7 & 12 nm (TSMC),273 mm2,"36,230,000"
+HiSilicon Kirin 990 5G,"10,300,000,000",2019,Huawei,7 nm,113.31 mm2,"90,900,000"
+"AWS Graviton2 (64-bit, 64-core ARM-based, SIMD, caches)[136][137]","30,000,000,000",2019,Amazon,7 nm,?,?
+"AMD Epyc Rome (64-bit, SIMD, caches)","39,540,000,000",2019,AMD,7 & 12 nm (TSMC),1008 mm2,"39,226,000"
+"TI Jacinto TDA4VM (ARM A72, DSP, SRAM)","3,500,000,000",2020,Texas Instruments,16 nm,?,?
+"Apple A14 Bionic (hexa-core 64-bit ARM64 ""mobile SoC"", SIMD, caches)","11,800,000,000",2020,Apple,5 nm,88 mm2,"134,100,000"
+"Apple M1 (octa-core 64-bit ARM64 SoC, SIMD, caches)","16,000,000,000",2020,Apple,5 nm,119 mm2,"134,500,000"
+HiSilicon Kirin 9000,"15,300,000,000",2020,Huawei,5 nm,114 mm2,"134,200,000"
+"AMD Ryzen 7 5800H (64-bit, SIMD, caches, I/O and GPU)","10,700,000,000",2021,AMD,7 nm,180 mm2,"59,440,000"
+Apple A15,"15,000,000,000",2021,Apple,5 nm,107.68 mm2,"139,300,000"
+"Apple M1 Pro (10-core, 64-bit)","33,700,000,000",2021,Apple,5 nm,245mm2[148],"137,600,000"
+"Apple M1 Max (10-core, 64-bit)","57,000,000,000",2021,Apple,5 nm,432mm2[148],"131,900,000"
+Power10 dual-chip module (30 SMT8 cores or 60 SMT4 cores),"36,000,000,000",2021,IBM,7 nm,2 x 602mm2,"29,900,000"
+"Apple M1 Ultra (20-core, 64 bit)","114,000,000,000",2022,Apple,5 nm,2 × 432mm2,"131,900,000"
+"IBM Telum dual-chip module (2×8 cores, 2×256 MB cache)","45,000,000,000",2022,IBM,7 nm (Samsung),2 × 530mm2,"42,450,000"

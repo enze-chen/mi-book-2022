@@ -2,9 +2,9 @@
 # What's next?
 
 
-## Looking ahead to Module 3
+## Looking ahead to Module 2
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQa4TDJX_IwilNHPtvhQ8X1kEwqCXCCdtgW_jV_f-t0RIzaISpJpg20TJTDvnrvUPHpGDrj9x0DBCTu/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSmNwlPpKJGgxfqdBfxZZHWi4-weBRKTesO4AVXZ4aBM4tCv5uker6n3MoNmPivq8oN3YbdcyP-WkPg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
@@ -16,7 +16,7 @@ A good place to start is the [list of MI resources](https://github.com/ncfrey/re
 If you're interested in more Jupyter notebook examples, we recommend:
 - [Matminer examples](https://github.com/hackingmaterials/matminer_examples): This introduces other functionalities of the package.
 Click on {guilabel}`launch binder` to start an interactive Jupyter notebook environment.
-- [MI best practices](https://github.com/anthony-wang/BestPractices): This is a companion GitHub repo to the article by Wang et al. {cite}`wang_2020` on best practices in MI.
+- [MI best practices](https://github.com/anthony-wang/BestPractices): This is a companion GitHub repo to the article by Wang et al. {cite}`p1-wang_2020` on best practices in MI.
 Many of these concepts should be familiar to you!
 - Any of the notebooks in this textbook. 😛
 
@@ -25,7 +25,7 @@ Many of these concepts should be familiar to you!
 ### More research projects!
 
 Of course, simply _reading_ about MI is not nearly as fun as _practicing_ MI, which means pursuing more research projects!
-See Bryce Meredig's editorial in _Chemistry of Materials_ for a few areas where MI will likely make an impact in the immediate or near future {cite}`meredig_2019`.
+See Bryce Meredig's editorial in _Chemistry of Materials_ for a few areas where MI will likely make an impact in the immediate or near future {cite}`p1-meredig_2019`.
 Then, consider reaching out to UC Berkeley research labs/groups to see if they're in need of undergraduate research assistants.
 It's helpful to work alongside others and learn from them, and getting the opportunity to follow a PI will help you find impactful and novel research directions.
 
@@ -91,6 +91,7 @@ Thanks for keeping it 💯.
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames
+:keyprefix: p1-
 ```
 
 

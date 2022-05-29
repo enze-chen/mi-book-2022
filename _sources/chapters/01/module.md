@@ -113,7 +113,7 @@ Please note that external links will open _in the same tab_, so you'll have to r
 
 #### DataHub
 
-We will be conducting tutorials in the [Python programming language](https://www.python.org/) and executing the Python code using interactive [Jupyter notebooks](https://jupyter.org/) {cite}`kluyver_2016`.
+We will be conducting tutorials in the [Python programming language](https://www.python.org/) and executing the Python code using interactive [Jupyter notebooks](https://jupyter.org/) {cite}`b1-kluyver_2016`.
 The principal reason we're using Jupyter Book for this curriculum is because this software allows us to directly compile Jupyter notebooks into this website while maintaining links back to the original notebooks.
 We can then run the notebooks in the cloud without having to mess with individual installations of Python, which greatly increases accessibility.
 To enable interactive code execution for these notebooks, which we will be doing throughout the tutorials, we can open the Jupyter notebook pages using the DataHub service generously provided by the [Division of Computing, Data Science, and Society](https://data.berkeley.edu/).
@@ -143,7 +143,7 @@ We know it has been a very taxing year for everyone and want to make this space 
 ### Active learning
 
 Lectures are boring to listen to and they're boring to give, and overall not very effective for learning.
-So, we'll be employing **active learning** strategies that will give you opportunities to discuss ideas, ask questions, test hypotheses, and take agency over your learning, which research has shown to be extremely beneficial {cite}`freeman_2014`.
+So, we'll be employing **active learning** strategies that will give you opportunities to discuss ideas, ask questions, test hypotheses, and take agency over your learning, which research has shown to be extremely beneficial {cite}`b1-freeman_2014`.
 In addition to the more "obvious" activities like interactive coding and peer discussions, you'll also be providing feedback frequently---for us, for your peers, and for yourselves---as opportunities for reflection on growth.
 Our hope is that you will feel comfortable participating in all of these activities (and don't find them _too_ tedious 😜) as we've tried to intentionally design them to maximize your learning.
 
@@ -162,8 +162,8 @@ Regardless of your previous experience, it's likely you will learn a lot of new 
 As we mentioned in the kickoff meeting, we will likely fail when doing research, and _fail often_.
 
 Fortunately, once we internalize these facts, it becomes not-too-hard to chart a path forward.
-In fact, just as ML is able to learn from your failures {cite}`raccuglia_2016`, **you too will learn from your failures**.
-We know that by signing up for this internship, you are all ready for this challenge and you all believe that ability can be developed (also known as a growth mindset {cite}`dweck_2016`).
+In fact, just as ML is able to learn from your failures {cite}`b1-raccuglia_2016`, **you too will learn from your failures**.
+We know that by signing up for this internship, you are all ready for this challenge and you all believe that ability can be developed (also known as a growth mindset {cite}`b1-dweck_2016`).
 With this mentality towards learning and the support of your peers and mentors, you'll surely fluorish in this module. 🌸
 
 
@@ -180,5 +180,6 @@ Tell us on Slack, on Zoom, or using the GitHub issues tracker, and your ideas ca
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames
+:keyprefix: b1-
 ```
 

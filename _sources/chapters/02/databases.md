@@ -38,7 +38,7 @@ Here is a list of some common materials databases (and data infrastructure, more
 - [MatWeb](http://matweb.com/): A database for properties of various engineering materials and their datasheets.
 - These aren't databases _per se_, but there are other websites with lots of materials-related data such as Wikipedia, WolframAlpha, etc.
 
-For more sources, you can try searching on Google, reading MI review papers such as the one by [Himanen et al. _Adv. Sci._, 2019](https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.201900808) {cite}`himanen_2019`, or looking at the "Data availability" sections at the end of relevant papers.
+For more sources, you can try searching on Google, reading MI review papers such as the one by [Himanen et al. _Adv. Sci._, 2019](https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.201900808) {cite}`c2-himanen_2019`, or looking at the "Data availability" sections at the end of relevant papers.
 
 
 
@@ -46,7 +46,7 @@ For more sources, you can try searching on Google, reading MI review papers such
 
 We'll begin our discussion of the Materials Project with these slides:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQbK8wWVG8nuv3gNYzLP_ajJye7onF3FIpn89gUEruHwh5E2L3WrzJpufM3T47cMXsLgFHD3xfVuV9o/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTJT3GY2iN7X4fpOuINfR6-IiAqI_5VFRGARDsUYtmYQXrkJUaKoHSWjVJ9lickwaWtYzMuKvy6K86X/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
@@ -64,10 +64,11 @@ Please see the accompanying Jupyter notebook.
 
 ## References
 
-Here are some more papers if you're interested in the technical details behind the Materials Project {cite}`jain_2013, ong_2013, ong_2015`.
+Here are some more papers if you're interested in the technical details behind the Materials Project {cite}`c2-jain_2013, c2-ong_2013, c2-ong_2015`.
 
 ```{bibliography}
 :style: unsrt
 :filter: docname in docnames
+:keyprefix: c2-
 ```
 

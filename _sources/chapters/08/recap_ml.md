@@ -1,17 +1,17 @@
-(h1:05:recap_ml)=
+(h1:08:recap_ml)=
 # Recap ML discussion
 
-Here's a quick slide deck summarizing the key points from yesterday:
+Here's a quick slide deck summarizing the key points from Monday and Tuesday:
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJmaHyT4j2z2KTmgsA0-L_Ah_4IOEBop651Qd9riHqP-DrKSQZveFB-vBMN3_hLMBI_BYXLX6q3ZX6/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXDqjxISVZED09iuSq_b_wJcIlcDx10rUeVRdqnSlmkNIzCi-C4rBvJ_1z1Z30bMfjYNFJ09JAKyyp/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 
 
 ## Yikes 😱
 
-We understand that after last week's intense learning extravaganza and this long weekend, for us to now tell you to "go do self-directed research" can feel like we're tossing you into the deep end—and you'd be completely right!
+We understand that after last week's intense learning extravaganza and these two days of dense ML content, for us to now tell you to "go do self-directed research" can feel like we're tossing you into the deep end—and you'd be completely right!
 We've opened the floodgates and inundated you with science, data, and programming tools, and now we're asking you to make sense of it all and chart your path forward.
-And you have a presentation in two weeks' time.
+And you have a presentation next week.
 The task sounds daunting.
 The path forward appears nebulous.
 Your anxiety is rising... 🌡

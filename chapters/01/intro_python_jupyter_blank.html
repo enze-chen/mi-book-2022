@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>foo &#8212; Introduction to Materials Informatics</title>
+    <title>Introduction to Python and Jupyter notebooks &#8212; Introduction to Materials Informatics</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,6 +51,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="canonical" href="https://enze-chen.github.io/mi-book-2022/chapters/01/intro_python_jupyter_blank.html" />
     <link rel="shortcut icon" href="../../_static/mi_favicon.png"/>
@@ -175,11 +179,6 @@ const thebe_selector_output = ".output, .cell_output"
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="python_greatest_hits_blank.html">
-       Python - Greatest hits 🚀
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="python_gory_details_blank.html">
        Python - Gory details 🚀
       </a>
@@ -249,7 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../03/day_03.html">
-   Day 03: MI research + guest speaker
+   Day 03: MI research
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -272,15 +271,22 @@ const thebe_selector_output = ".output, .cell_output"
      Reading papers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../03/guest_mp.html">
-     Guest speaker: ???
-    </a>
-   </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../03/homework_03.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../03/diel_guided.html">
+       Guided practice with dielectric data
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -288,8 +294,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../04/day_04.html">
    Day 04: Data visualization
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -303,8 +309,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/best_practices_viz.html">
      Best practices for visualization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-    <label for="toctree-checkbox-7">
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -320,8 +326,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../04/homework_04.html">
      Homework
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-    <label for="toctree-checkbox-8">
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -339,8 +345,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../05/day_05.html">
    Day 05: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label for="toctree-checkbox-9">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -355,22 +361,10 @@ const thebe_selector_output = ".output, .cell_output"
      Guest speaker: Ventura!
     </a>
    </li>
-   <li class="toctree-l2 has-children">
+   <li class="toctree-l2">
     <a class="reference internal" href="../05/brief_intro_ml.html">
      Brief intro to ML
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../05/brief_intro_ml_blank.html">
-       Follow-along notebook 🚀
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../05/homework_05.html">
@@ -396,6 +390,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../06/recap_week_1.html">
+     Recap week 1
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/intro_ml.html">
      Introduction to ML
@@ -430,10 +429,22 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../06/homework_06.html">
      Homework
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../06/ml_practice_blank.html">
+       More ML practice 🚀
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -441,8 +452,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../07/day_07.html">
    Day 07: ML speedrun (pt. 2)
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -451,8 +462,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/features.html">
      Featurization
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-    <label for="toctree-checkbox-15">
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -468,8 +479,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../07/advanced_ml.html">
      Advanced ML methods
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
-    <label for="toctree-checkbox-16">
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -492,8 +503,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../08/day_08.html">
    Day 08: Research + guest speaker
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
-  <label for="toctree-checkbox-17">
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -501,6 +512,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../08/recap_ml.html">
      Recap ML discussion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../08/practical.html">
+     Practical considerations
     </a>
    </li>
    <li class="toctree-l2">
@@ -519,8 +535,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../09/day_09.html">
    Day 09: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
-  <label for="toctree-checkbox-18">
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -553,8 +569,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../12/day_12.html">
    Day 12: Research + grad school
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
-  <label for="toctree-checkbox-19">
+  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+  <label for="toctree-checkbox-20">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -569,19 +585,14 @@ const thebe_selector_output = ".output, .cell_output"
      Grad school Q&amp;A: Mark!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../12/active_learning_blank.html">
-     Intro to active learning 🚀
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../13/day_13.html">
    Day 13: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
-  <label for="toctree-checkbox-20">
+  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+  <label for="toctree-checkbox-21">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -597,8 +608,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../14/day_14.html">
    Day 14: Research
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
-  <label for="toctree-checkbox-21">
+  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+  <label for="toctree-checkbox-22">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -619,8 +630,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../15/day_15.html">
    Day 15: SLAM presentations!
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
-  <label for="toctree-checkbox-22">
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -629,8 +640,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../15/final_presentations.html">
      Final presentations
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
-    <label for="toctree-checkbox-23">
+    <input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+    <label for="toctree-checkbox-24">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -792,6 +803,82 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#did-you-say-python">
+   Did you say… Python?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-python-code">
+     Using Python code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-python-code">
+     Running Python code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#philosophy-of-jupyter-notebooks">
+   Philosophy of Jupyter notebooks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organization-of-jupyter-notebooks">
+     Organization of Jupyter notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-edits">
+     Making edits
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introducing-the-code-cell">
+   Introducing the code cell
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
+     EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datahub">
+   DataHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-extra-packages">
+     Installing extra packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-programming-principles-and-tips">
+   General programming principles and tips ☝
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -799,34 +886,264 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>foo</h1>
+                <h1>Introduction to Python and Jupyter notebooks</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#did-you-say-python">
+   Did you say… Python?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-python-code">
+     Using Python code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-python-code">
+     Running Python code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#philosophy-of-jupyter-notebooks">
+   Philosophy of Jupyter notebooks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#organization-of-jupyter-notebooks">
+     Organization of Jupyter notebooks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#making-edits">
+     Making edits
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introducing-the-code-cell">
+   Introducing the code cell
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
+     EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datahub">
+   DataHub
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-extra-packages">
+     Installing extra packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-programming-principles-and-tips">
+   General programming principles and tips ☝
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="foo">
-<h1>foo<a class="headerlink" href="#foo" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-python-and-jupyter-notebooks">
+<h1>Introduction to Python and Jupyter notebooks<a class="headerlink" href="#introduction-to-python-and-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p><em>Authors: Enze Chen and Mark Asta (University of California, Berkeley)</em></p>
+<p>Welcome!
+In this notebook, we will introduce the <a class="reference external" href="https://www.python.org/"><strong>Python programming language</strong></a> and <a class="reference external" href="https://jupyter.org/"><strong>Jupyter notebook</strong></a> programming environment.
+If you already have extensive experience with both of these concepts, that’s great!
+We hope you don’t mind the quick refresher, and maybe some of our protips will be new for you. 😀</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an interactive exercise, so you will want to click the <span class="fa fa-rocket"></span> and open the notebook in DataHub (or Colab for non-UCB students).</p>
+</div>
+<div class="section" id="did-you-say-python">
+<h2>Did you say… Python?<a class="headerlink" href="#did-you-say-python" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/python.png"><img alt="python" src="../../_images/python.png" style="width: 30%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Python logo.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<p>By now, many people know (or at least have heard of) the Python programming language, but what they don’t know is that the language is not named after the snake 🐍, but rather the television show <a class="reference external" href="https://en.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus">Monty Python’s Flying Circus</a>! 📺</p>
+<p>Since its introduction in 1991, Python has <a class="reference external" href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">skyrocketed in popularity</a> in recent years to become one of the most popular programming languages used in computer science, and arguably the <em>most</em> popular language in data science.
+This growth is in part due to:</p>
+<div class="sidebar">
+<p class="sidebar-title">Python</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/python_xkcd.png"><img alt="python_xkcd" src="../../_images/python_xkcd.png" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text"><a class="reference external" href="https://xkcd.com/353/">xkcd comic 353</a>.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<ol class="simple">
+<li><p>Its <em>readability</em>. Python is designed to be simple and reads like English, using common keywords instead of symbols (e.g., <code class="docutils literal notranslate"><span class="pre">and</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>).</p></li>
+<li><p>Its <em>extensibility</em>. Python makes it easy for developers to write <em>modules</em> that extend its functionalities for applications in data science, <a class="reference external" href="https://www.nature.com/articles/s41586-020-2649-2">scientific computing</a>, <a class="reference external" href="https://numfocus.org/case-studies/first-photograph-black-hole">imaging black holes</a>, and <a class="reference external" href="https://twitter.com/ThePSF/status/1362516507918483458?s=20">flying drones on Mars</a>.</p></li>
+<li><p>Its <em>open-source</em> properties. This means anyone can contribute to Python development and anyone can use it—for free!</p></li>
+</ol>
+<p>For these reasons (and more), we will be using Python for this module.
+<strong>If you’re new to Python, that’s OK!</strong>
+The rest of today will be spent on [re]acquainting ourselves with Python and introducing the necessarity functionalities.</p>
+<div class="section" id="using-python-code">
+<h3>Using Python code<a class="headerlink" href="#using-python-code" title="Permalink to this headline">¶</a></h3>
+<p>In this module, we’re going to take a somewhat practical approach to using Python, in the sense that we view it as just another tool in our toolbox for expanding our understanding of materials.
+We’ll discuss Python concepts, syntax, and style along the way, but the <em>focus</em> will always be on applying it to solve relevant MSE problems in a data-driven fashion.
+Therefore, our focus as mentors will be to teach you only what’s relevant for this module, and unfortunately won’t have much time to extensively cover the details of the language or various packages during the tutorials (you’re welcome to ask in OH!).</p>
+<p>While this strategy risks leaving you with only a cursory understanding of Python, we want to offer three points of solace and why this might not actually be the case:</p>
+<ol class="simple">
+<li><p>Based on the initial survey, many of you have some programming experience already, even if it’s in a different language.
+We think you’ll be surprised to find that, both at a theoretical and applied level, Python is not <em>too</em> different from other languages that you may have seen (e.g., MATLAB, C++) and that a lot of your prior knowledge will transfer to help you understand Python.</p></li>
+<li><p>Solving scientific problems algorithmically (e.g., in a data-driven way) often requires a lot more than being able to program, irrespective of the programming language.
+Therefore, while we’re teaching you Python programming syntax and tools, what we’re really hoping to communicate is a <em>way of thinking</em> like a computer, which is quite different than the way humans think.
+And so you might find that you’re spending more time <em>formulating</em> data-driven solutions than actually <em>writing code</em>.
+A little planning goes a long way.</p></li>
+<li><p>The third point isn’t really related to Python but to the internship more broadly, and that is our desire to expose you to the graduate school research experience, which encompasses a lot more than hammering out lines of code.
+We have designed this module in such a way that surfaces these other elements (the pleasant ones, anyways 😉) which we hope you will come to appreciate as well.</p></li>
+</ol>
+</div>
+<div class="section" id="running-python-code">
+<h3>Running Python code<a class="headerlink" href="#running-python-code" title="Permalink to this headline">¶</a></h3>
+<p>You can <em>write</em> Python code just about anywhere (even in Microsoft Word, lol), but in order to <em>execute</em> the code, you will need a Python <strong>kernel</strong>.
+For this module (at least, for these tutorials), we will use Jupyter notebooks for running the Python code we write.</p>
+</div>
+</div>
+<div class="section" id="philosophy-of-jupyter-notebooks">
+<h2>Philosophy of Jupyter notebooks<a class="headerlink" href="#philosophy-of-jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>The main design philosophy behind Jupyter notebooks could be summarized as the following: A platform for creating <em>computational narratives</em> to promote <em>literate computing</em>.
+The creators of Project Jupyter, one of whom is UC Berkeley Statistics Professor <a class="reference external" href="https://statistics.berkeley.edu/people/fernando-perez">Fernando Pérez</a>, wanted to create a tool that made computational research easier to communicate and more reproducible, which led to the development of Jupyter notebooks.
+The interleaving of code with prose and graphics has made programming a lot more accessible to general audiences and the interactivity of these notebooks also makes them great teaching tools!</p>
+<div class="section" id="organization-of-jupyter-notebooks">
+<h3>Organization of Jupyter notebooks<a class="headerlink" href="#organization-of-jupyter-notebooks" title="Permalink to this headline">¶</a></h3>
+<p>The information in Jupyter notebooks is organized into <strong>cells</strong>, which come in many forms.
+This cell is called a <strong>Markdown cell</strong>, which is used for text that can be formatted with the <a class="reference external" href="https://www.markdownguide.org/">Markdown</a> markup language.
+This is a fairly simple, yet extremely powerful markup language that allows you to do most of the basic styles, such as add emphasis, make itemized lists, create headings, write inline code, add links, include external images, and use HTML (see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">here</a> for a cheat sheet).
+You know this is a Markdown cell because when you select this cell (click on it such that a <font color="blue">blue bar</font> appears on the left), the menu bar at the top shows “<code class="docutils literal notranslate"><span class="pre">Markdown</span>&#160; <span class="pre">v</span></code>” in the second row:</p>
+<p><img alt="jupyter_menu" src="../../_images/jupyter_menu.png" /></p>
+<p>As an example, here is an itemized list:</p>
+<ul class="simple">
+<li><p>spam</p></li>
+<li><p>eggs</p></li>
+</ul>
+<p>And here is a code block <em>in the Markdown cell</em> with Python syntax highlighting:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And if you love <span class="math notranslate nohighlight">\(\LaTeX\)</span> as much as we do, it can handle that too. 😍</p>
+</div>
+<div class="section" id="making-edits">
+<h3>Making edits<a class="headerlink" href="#making-edits" title="Permalink to this headline">¶</a></h3>
+<p>To <strong>edit</strong> a Markdown cell, double-click on it until you see your cursor flashing in the cell and the cell change color from <font color="blue">blue</font> to <font color="green">green</font>.
+The cell’s background will also change color from white to a light gray.</p>
+<p><strong>EXERCISE:</strong> Double click on this cell and answer the following question by replacing the underscores:</p>
+<p>What is your name? _________</p>
+<hr class="docutils" />
+<p>To leave “edit mode” and show your changes, press <kbd>Shift</kbd>+<kbd>Enter</kbd> when you’re done.</p>
+<p>Notice how we included several Markdown cells in a row rather than putting all this information into a single, giant cell.
+It’s often a nice design choice to split your work into smaller chunks to improve readability. 👀</p>
+</div>
+</div>
+<div class="section" id="introducing-the-code-cell">
+<h2>Introducing the code cell<a class="headerlink" href="#introducing-the-code-cell" title="Permalink to this headline">¶</a></h2>
+<p>Notice how the next cell looks a little different.
+It is a <strong>code cell</strong>, which you can distinguish in a few ways.</p>
+<ul class="simple">
+<li><p>If you click in the cell, the menu bar at the top will now show “<code class="docutils literal notranslate"><span class="pre">Code</span>&#160;&#160; <span class="pre">v</span></code>.”</p></li>
+<li><p>The cell will always have a gray background.</p></li>
+<li><p>You may also notice a <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code> tag in the left margin.</p></li>
+</ul>
+<p>You can write Python code in these cells and then <strong>execute the code</strong> with <kbd>Shift</kbd>+<kbd>Enter</kbd>.
+Or you can click the <kbd>▶ Run</kbd> button in the menu bar to execute the code.</p>
+<p><strong>EXERCISE:</strong> In the space below, enter your name between the quotation marks and then run the code cell.</p>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
-
-
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># inline comments in Python start with &quot;#&quot;</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>                  <span class="c1"># enter your name here as a string</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">!&#39;</span><span class="p">)</span>   <span class="c1"># this is a formatted string literal, or f-string, and it&#39;s f-ing awesome</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</div>
+<p>Now you might notice that some output appeared after you executed the cell (which makes sense because we called <code class="docutils literal notranslate"><span class="pre">print()</span></code>) and a number also appeared between the square brackets!
+(e.g., <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>)
+This number indicates the sequence of code cell execution, which can be handy for a few reasons:</p>
+<ul class="simple">
+<li><p>You can clearly tell which cells have been executed and which cells have not.
+A cell’s variables and functions are only usable in the notebook after it has been executed.</p></li>
+<li><p>Accordingly, for better or worse, the variables and functions in one code cell (at the global <em>scope</em>) can be accessed in other code cells that are executed later.
+This allows you to split code among several code blocks and run them sequentially.</p></li>
+<li><p>For better or worse, you can execute code cells in Jupyter notebooks in <em>whatever order you want</em>.
+We still recommend top to bottom, but this does give us flexibility to change an earlier code cell (and rerun it!) if we later deem it necessary.</p></li>
+</ul>
+<div class="section" id="exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it">
+<h3>EXERCISE: Change this Markdown cell into a code cell using the menu bar and run it<a class="headerlink" href="#exercise-change-this-markdown-cell-into-a-code-cell-using-the-menu-bar-and-run-it" title="Permalink to this headline">¶</a></h3>
+<p>a = 4
+a             # what do you see?</p>
+</div>
+</div>
+<div class="section" id="datahub">
+<h2>DataHub<a class="headerlink" href="#datahub" title="Permalink to this headline">¶</a></h2>
+<p>If you are a UC Berkeley student, you may be reading this Jupyter notebook on the school’s DataHub (a <a class="reference external" href="https://jupyter.org/hub">JupyterHub</a> instance), which has been graciously provisioned for this module by the <a class="reference external" href="https://data.berkeley.edu/">Division of Computing, Data Science, and Society</a>.
+With DataHub, all of our Python code will be saved and executed in the cloud, which saves us <em>a lot</em> of hassle with software installation.
+Everything is also automatically synced with the Jupyter Book!</p>
+<div class="section" id="installing-extra-packages">
+<h3>Installing extra packages<a class="headerlink" href="#installing-extra-packages" title="Permalink to this headline">¶</a></h3>
+<p>Perhaps the only “catch,” which may come up as you work on your research project, is that you will still have to manually install Python packages that are not included with the default DataHub deployment <em>every time</em> you load DataHub.
+In order to install new packages, use the <code class="docutils literal notranslate"><span class="pre">pip</span></code> package manager directly within a Jupyter code cell.
+The syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install &lt;package-name&gt;
 </pre></div>
 </div>
+<p><strong>EXERCISE</strong>: Let’s demonstrate this below by:</p>
+<ol class="simple">
+<li><p>Adding a new code cell, and</p></li>
+<li><p>Installing the <code class="docutils literal notranslate"><span class="pre">mendeleev</span></code> package.</p></li>
+</ol>
+<p>We’ll also quickly demonstrate how to navigate to the root directory for you to see all the files in DataHub and upload new ones as needed.
+Note that when you close a DataHub notebook, <strong>your edits and outputs are preserved</strong> 🙏🏼, but the variables (kernel) will be reset.</p>
 </div>
+</div>
+<div class="section" id="general-programming-principles-and-tips">
+<h2>General programming principles and tips ☝<a class="headerlink" href="#general-programming-principles-and-tips" title="Permalink to this headline">¶</a></h2>
+<p><strong>EXERCISE</strong>: Before we set you loose to work on practice problems, let’s spend some time discussing some general programming principles and best practices.</p>
+<p>I’ll start us off with one: <strong>save your work frequently</strong>.
+Just because a code cell runs or a Markdown cell renders does <em>not</em> mean that your work is saved.
+Jupyter notebook kernels are known to crash pretty randomly, so save your work by clicking the symbol in the menu bar or using <kbd>Ctrl</kbd>+<kbd>S</kbd> (or <kbd>Command</kbd>+<kbd>S</kbd> on Macs).</p>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If you want to read more about the design of Jupyter notebooks, please see the short paper by <a class="reference external" href="https://ebooks.iospress.nl/publication/42900">Kluyver, T. et al. <em>Positioning and power in academic publishing: Players, agents and agendas</em>, 2016</a>.</p></li>
+<li><p>If you want to see a [very long] list of interesting Jupyter notebooks, see <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">here</a>.</p></li>
+<li><p>More tutorials on using Python in Jupyter notebooks can be found with a quick web search.</p></li>
+<li><p>For a Markdown <strong>cheat sheet</strong>, see <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">here</a>.</p></li>
+</ul>
 </div>
 </div>
 
