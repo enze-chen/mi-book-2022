@@ -59,10 +59,17 @@ There's no need to submit the issue (you can just close the tab), unless you act
 
 ### Materials Project
 
-A lot of the data that we will analyze in this module come from the [Materials Project](https://materialsproject.org/) (MP) database, which is an initiative spearheaded by some fine folks at UCB and LBL (Mark is a co-PI, or co-principal investigator, for MP). 
+A lot of the data that we will analyze in this module come from the [Materials Project](https://legacy.materialsproject.org/) (MP) database, which is an initiative spearheaded by some fine folks at UCB and LBL (Mark is a co-PI, or co-principal investigator, for MP). 
 Naturally, in order to access this data, you will have to create an account, which you can conveniently do with your UCB Google account (Enze does this for his research).
+````{margin}
+```{admonition} Updates to MP
+:class: note
+Materials Project is currently being revamped to better support future work, so **we're using the legacy site**.
+Make sure you obtain the API key from the correct domain.
+```
+````
 
-Please go to the [home page](https://materialsproject.org/) and click {guilabel}`Sign in with Google`.
+Please go to the [home page](https://legacy.materialsproject.org/) and click {guilabel}`Sign in with Google`.
 Follow the steps to completion.
 
 #### Test MP account
