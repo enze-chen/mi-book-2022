@@ -10,7 +10,7 @@ We recommend making that paper the priority, and then reviewing any of the code 
 To recap some of the topics presented today in preparation for self-directed research, we suggest a few papers below on the Materials Project and its dielectric dataset.
 These papers can all be found in [this Google Drive folder](https://drive.google.com/drive/folders/1o02Z8IsLw9kIsN79vahu-EeyOQP3OrNh?usp=sharing).
 
-1. [The perspective](https://drive.google.com/file/d/15UQ5rXq0jP8AI4992YcEW8I-3_9QrT0Q/view?usp=sharing) by Jain et al. {cite}`b2-jain_2016`.
+1. [The perspective](https://drive.google.com/file/d/15UQ5rXq0jP8AI4992YcEW8I-3_9QrT0Q/view?usp=sharing) by Jain et al. {cite}`c3-jain_2016`.
     - The most critical sections are **I, II, and V**. The rest can be safely skipped.
 1. The [paper about the dielectric constants dataset](https://drive.google.com/file/d/1yGQ7G8n_DrLdpsC9e72gb3eKSAGP5-AU/view?usp=sharing) on Materials Project (MP) by Ioannis Petousis et al. {cite}`c3-petousis_2017`.
     - We **strongly recommend reading the paper in its entirety** because it gives a comprehensive (and not-too-specialized) discussion about the data format, the underlying science, and some interesting trends that can motivate your self-directed research.

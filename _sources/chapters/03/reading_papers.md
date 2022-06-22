@@ -13,7 +13,7 @@ This document attempts to answer these questions.
 
 ## How to read papers
 
-There's a lot of guidance out there on how to read a scientific research paper, such as one by S. Keshav that we've shared [in the Drive](https://drive.google.com/drive/folders/1FuZJyp1yWqoMXNs0_1s8LtSzPUwC5CpM?usp=sharing) {cite}`d2-keshav_2007`.
+There's a lot of guidance out there on how to read a scientific research paper, such as one by S. Keshav that we've shared [in the Drive](https://drive.google.com/drive/u/1/folders/1bDWHhWAiN0xiZwL9euA6-ZIFW39d9ICf) {cite}`d2-keshav_2007`.
 We actually suggest you **start with this document** as it's short (2 pages!) and we left a few comments on there.
 If you don't like that advice, you can search for many more on Google.
 

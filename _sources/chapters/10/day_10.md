@@ -21,7 +21,7 @@ Clarify any questions and concerns you may have regarding your project, and summ
 ## Timing for today
 
 - We will start the day with morning scrum at 9:00AM.
-- We will convene for a brief check-in at 1:00PM.
+- We will convene for a brief check-in at 1:30PM.
 - We will have our afternoon debrief at the scheduled time.
 
 

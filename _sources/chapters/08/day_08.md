@@ -19,7 +19,7 @@ This is a really special opportunity and you won't want to miss Austin's story. 
 
 - We will start the day at 9:00AM.
 - Austin will be speaking from 11:00AM to 12:00PM.
-- Enze will hold drop-in OH from 2:00PM to 3:00PM. 🦆
+- There will be a [NERSC](https://www.nersc.gov/) tour with the ASPIRES program at 2:00PM.
 - We will have our afternoon debrief at the scheduled time.
 
 
