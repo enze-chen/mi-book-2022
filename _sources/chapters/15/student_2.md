@@ -4,7 +4,7 @@
 **Title**: Determining compounds with the highest electronic contribution to the dielectric constant
 
 ```{image} ../../assets/fig/15/Anastasia_electr_final.png
-:width: 50%
+:width: 95%
 :align: center
 ```
 
