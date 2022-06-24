@@ -143,7 +143,6 @@ parts:
       sections:
         - file          : chapters/15/final_presentations
           sections:
-            - file      : chapters/15/student_1
             - file      : chapters/15/student_2
             - file      : chapters/15/student_3
             - file      : chapters/15/student_4
